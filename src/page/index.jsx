@@ -10,8 +10,8 @@ export default function SinglePage() {
   return (
     <div>
       <Hero/>
-      <Features/>
       <Productivity/>
+      <Features/>
       <CTA/>
       <Team/>
       <Footer/>

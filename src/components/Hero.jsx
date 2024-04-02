@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import Backdrop from '../assets/framerBg.svg';
 import Header from './Header'
 
 
@@ -9,10 +10,11 @@ export default function Hero() {
       <Header/>
       <div className="relative isolate overflow-hidden pt-14">
         {/* <img
-          src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2830&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
-          alt=""
+          src={Backdrop}
+          alt="Backdrop"
           className="absolute inset-0 -z-10 h-full w-full object-cover"
-        /> */}
+        />
+         */}
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"
@@ -25,18 +27,14 @@ export default function Hero() {
             }}
           />
         </div>
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div className="mx-auto max-w-3xl py-32 sm:py-48 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
-              Research / Design / Technology / Innovation{' '}
-              {/* <Link to="/" className="font-semibold text-white">
-                <span className="absolute inset-0" aria-hidden="true" />
-                Read more <span aria-hidden="true">&rarr;</span>
-              </Link> */}
+              Research / Design / Technology / Innovation
             </div>
           </div>
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-7xl">
+            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-8xl">
               {/* Data to enrich your online business */} Building Bloques
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-300">

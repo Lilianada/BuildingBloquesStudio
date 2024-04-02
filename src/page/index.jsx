@@ -3,7 +3,7 @@ import Header from '../components/Header'
 import Hero from '../components/Hero'
 import Footer from '../components/Footer'
 
-export default function index() {
+export default function SinglePage() {
   return (
     <div>
       <Header/>

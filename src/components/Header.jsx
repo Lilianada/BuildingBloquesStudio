@@ -17,17 +17,14 @@ export default function Header() {
     <header className="absolute inset-x-0 top-0 z-50">
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
-            <Link to="/" className="-m-1.5 p-1.5">
+            <Link to="/" className="-m-1.5 p-1.5 border-2 rounded-full border-indigo-500">
               <span className="sr-only">BuildingBloques</span>
-              <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                alt=""
-              />
+              <h4 className='font-bold text-indigo-500 italic text-xl'>BB</h4>
             </Link>
           </div>
-          <div className="flex lg:hidden">
-            <button
+            
+          {/* <div className="flex lg:hidden">
+             <button
               type="button"
               className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400"
               onClick={() => setMobileMenuOpen(true)}
@@ -35,21 +32,21 @@ export default function Header() {
               <span className="sr-only">Open main menu</span>
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </button>
-          </div>
-          <div className="hidden lg:flex lg:gap-x-12">
+          </div> */}
+          {/* <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
               <Link key={item.name} to={item.href} className="text-sm font-semibold leading-6 text-white">
                 {item.name}
               </Link>
             ))}
-          </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+          </div> */}
+          <div className="flex flex-1 justify-end">
             <Link to="/" className="text-sm font-semibold leading-6 text-white">
-              Log in <span aria-hidden="true">&rarr;</span>
+              Contact Us <span aria-hidden="true">&rarr;</span>
             </Link>
           </div>
         </nav>
-        <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+        {/* <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
           <div className="fixed inset-0 z-50" />
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
             <div className="flex items-center justify-between">
@@ -94,7 +91,7 @@ export default function Header() {
               </div>
             </div>
           </Dialog.Panel>
-        </Dialog>
+        </Dialog> */}
       </header>
 
   )

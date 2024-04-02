@@ -4,7 +4,7 @@ import Footer from '../components/Footer'
 import CTA from '../components/CTA'
 import Features from '../components/Features'
 import Productivity from '../components/Productivity'
-import NewService from '../components/NewService'
+import Team from '../components/Team'
 
 export default function SinglePage() {
   return (
@@ -13,7 +13,7 @@ export default function SinglePage() {
       <Features/>
       <Productivity/>
       <CTA/>
-      {/* <NewService/> */}
+      <Team/>
       <Footer/>
     </div>
   )

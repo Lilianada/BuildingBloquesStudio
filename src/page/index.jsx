@@ -1,10 +1,9 @@
 import React from 'react'
 import Hero from '../components/Hero'
 import Footer from '../components/Footer'
-import CTA from '../components/CTA'
 import Features from '../components/Features'
 import Productivity from '../components/Productivity'
-import Team from '../components/Team'
+import CTA from '../components/CTA'
 
 export default function SinglePage() {
   return (
@@ -12,8 +11,7 @@ export default function SinglePage() {
       <Hero/>
       <Productivity/>
       <Features/>
-      <CTA/>
-      <Team/>
+      {/* <CTA/> */}
       <Footer/>
     </div>
   )

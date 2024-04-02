@@ -1,10 +1,15 @@
-import './App.css';
-import SinglePage from './page';
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import SinglePage from "./page";
 
 function App() {
   return (
     <div className="App">
-      <SinglePage/>
+      <Router>
+        <Routes>
+          <Route path="/" element={<SinglePage />}></Route>
+        </Routes>
+      </Router>
     </div>
   );
 }

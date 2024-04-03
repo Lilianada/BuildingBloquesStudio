@@ -2,16 +2,16 @@ import React from 'react'
 import Hero from '../components/Hero'
 import Footer from '../components/Footer'
 import Features from '../components/Features'
-import Productivity from '../components/Productivity'
-import CTA from '../components/CTA'
+import Productivity from '../components/TargetMarket'
+import NewService from '../components/NewService'
 
-export default function SinglePage() {
+export default function Home() {
   return (
     <div>
       <Hero/>
       <Productivity/>
       <Features/>
-      {/* <CTA/> */}
+      <NewService/>
       <Footer/>
     </div>
   )

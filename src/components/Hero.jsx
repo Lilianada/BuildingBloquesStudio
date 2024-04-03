@@ -38,7 +38,7 @@ export default function Hero() {
              Building Bloques
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-            Our mission is to collaborate with and grow organisations, brands and people by empowering them with the tools and strategies to launch, grow, and exit successful businesses.
+            We are a comprehensive solution provider, offering a full spectrum of services from business creation to cutting-edge technology solutions.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link to="/about-us" className="text-sm font-semibold leading-6 text-white">

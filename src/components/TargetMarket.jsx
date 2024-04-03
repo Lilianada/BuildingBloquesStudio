@@ -1,4 +1,5 @@
-import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
+import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid';
+import SpiderWeb from "../assets/Warp_ball.svg"
 
 const features = [
   {
@@ -40,11 +41,11 @@ export default function TargetMarket() {
               </p>
             </div>
             <img
-              src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
+              src={SpiderWeb}
               alt="Product screenshot"
-              className="relative -z-20 min-w-full max-w-xl rounded-xl shadow-xl ring-1 ring-white/10 lg:row-span-4 lg:w-[64rem] lg:max-w-none"
+              className="relative -z-20 min-w-full max-w-xl rounded-xl shadow-xl ring-1 ring-white/10 lg:row-span-4 lg:w-[64rem] lg:max-w-none object-contain"
               width={2432}
-              height={1442}
+              height={1400}
             />
             <div className="max-w-xl lg:row-start-3 lg:mt-10 lg:max-w-md lg:border-t lg:border-white/10 lg:pt-10">
               <dl className="max-w-xl space-y-8 text-base leading-7 text-gray-300 lg:max-w-none">

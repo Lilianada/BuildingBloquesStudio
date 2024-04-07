@@ -11,7 +11,7 @@ const navigation = {
   ],
 }
 
-export default function Example() {
+export default function StoreNavigation() {
   const [open, setOpen] = useState(false)
   const [openCart, setOpenCart] = useState(false)
 

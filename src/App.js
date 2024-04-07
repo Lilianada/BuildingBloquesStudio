@@ -5,6 +5,7 @@ import Contact from "./page/Contact";
 import About from "./page/About";
 import MarketPlace from "./page/MarketPlace";
 import ProductOverview from "./components/ProductOverview";
+import CheckoutForm from "./components/CheckoutForm";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/about-us" element={<About />}></Route>
           <Route path="/marketplace" element={<MarketPlace />}></Route>
           <Route path="/marketplace/product/overview/:id" element={<ProductOverview />}></Route>
+          <Route path="/marketplace/product/overview/checkout" element={<CheckoutForm />}></Route>
         </Routes>
       </Router>
     </div>

@@ -1,6 +1,8 @@
 import { Fragment } from 'react'
 import { StarIcon } from '@heroicons/react/20/solid'
 import { Tab } from '@headlessui/react'
+import StoreNavigation from './StoreNavigation'
+import { Link } from 'react-router-dom'
 
 const product = {
   name: 'Application UI Icon Pack',
@@ -68,21 +70,21 @@ const license = {
     
     <p>For personal and professional use. You cannot resell or redistribute these icons in their original or modified state.</p>
     
-    <ul role="list">
+    <ul>
     <li>You\'re allowed to use the icons in unlimited projects.</li>
     <li>Attribution is not required to use the icons.</li>
     </ul>
     
     <h4>What you can do with it</h4>
     
-    <ul role="list">
+    <ul>
     <li>Use them freely in your personal and professional work.</li>
     <li>Make them your own. Change the colors to suit your project or brand.</li>
     </ul>
     
     <h4>What you can\'t do with it</h4>
     
-    <ul role="list">
+    <ul>
     <li>Don\'t be greedy. Selling or distributing these icons in their original or modified state is prohibited.</li>
     <li>Don\'t be evil. These icons cannot be used on websites or applications that promote illegal or immoral beliefs or activities.</li>
     </ul>
@@ -95,6 +97,8 @@ function classNames(...classes) {
 
 export default function ProductOverview() {
   return (
+      <>
+      <StoreNavigation />
     <div className="bg-white">
       <div className="mx-auto px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
         {/* Product */}
@@ -159,7 +163,7 @@ export default function ProductOverview() {
             <div className="mt-10 border-t border-gray-200 pt-10">
               <h3 className="text-sm font-medium text-gray-900">Highlights</h3>
               <div className="prose prose-sm mt-4 text-gray-500">
-                <ul role="list">
+                <ul>
                   {product.highlights.map((highlight) => (
                     <li key={highlight}>{highlight}</li>
                   ))}
@@ -171,17 +175,17 @@ export default function ProductOverview() {
               <h3 className="text-sm font-medium text-gray-900">License</h3>
               <p className="mt-4 text-sm text-gray-500">
                 {license.summary}{' '}
-                <a href={license.href} className="font-medium text-indigo-600 hover:text-indigo-500">
+                <Link to={license.href} className="font-medium text-indigo-600 hover:text-indigo-500">
                   Read full license
-                </a>
+                </Link>
               </p>
             </div>
 
             <div className="mt-10 border-t border-gray-200 pt-10">
               <h3 className="text-sm font-medium text-gray-900">Share</h3>
-              <ul role="list" className="mt-4 flex items-center space-x-6">
+              <ul className="mt-4 flex items-center space-x-6">
                 <li>
-                  <a href="#" className="flex h-6 w-6 items-center justify-center text-gray-400 hover:text-gray-500">
+                  <Link to="#" className="flex h-6 w-6 items-center justify-center text-gray-400 hover:text-gray-500">
                     <span className="sr-only">Share on Facebook</span>
                     <svg className="h-5 w-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
                       <path
@@ -190,10 +194,10 @@ export default function ProductOverview() {
                         clipRule="evenodd"
                       />
                     </svg>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="flex h-6 w-6 items-center justify-center text-gray-400 hover:text-gray-500">
+                  <Link to="#" className="flex h-6 w-6 items-center justify-center text-gray-400 hover:text-gray-500">
                     <span className="sr-only">Share on Instagram</span>
                     <svg className="h-6 w-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
                       <path
@@ -202,15 +206,15 @@ export default function ProductOverview() {
                         clipRule="evenodd"
                       />
                     </svg>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="flex h-6 w-6 items-center justify-center text-gray-400 hover:text-gray-500">
+                  <Link to="#" className="flex h-6 w-6 items-center justify-center text-gray-400 hover:text-gray-500">
                     <span className="sr-only">Share on X</span>
                     <svg className="h-5 w-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
                     </svg>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -325,5 +329,6 @@ export default function ProductOverview() {
         </div>
       </div>
     </div>
+    </>
   )
 }

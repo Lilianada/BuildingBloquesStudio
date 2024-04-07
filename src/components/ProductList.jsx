@@ -6,7 +6,7 @@ const products = [
       name: 'Fusion',
       category: 'UI Kit',
       href: '#',
-      price: '$49',
+      price: '₦10,000',
       imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-05-related-product-01.jpg',
       imageAlt:
         'Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background.',
@@ -16,7 +16,7 @@ const products = [
       name: 'Fusion',
       category: 'UI Kit',
       href: '#',
-      price: '$49',
+      price: '₦10,000',
       imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-05-related-product-01.jpg',
       imageAlt:
         'Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background.',
@@ -24,14 +24,23 @@ const products = [
     {
       id: 3,
       name: 'Fusion',
-      category: 'UI Kit',
+      category: 'HTML Portfolio Template',
       href: '#',
-      price: '$49',
+      price: '₦10,000',
       imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-05-related-product-01.jpg',
       imageAlt:
         'Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background.',
     },
-    // More products...
+    {
+      id: 4,
+      name: 'Fancy',
+      category: 'React Portfolio Template',
+      href: '#',
+      price: '₦10,000',
+      imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-05-related-product-01.jpg',
+      imageAlt:
+        'Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background.',
+    },
   ]
   
   export default function ProductList() {
@@ -39,11 +48,11 @@ const products = [
       <div className="bg-white">
         <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
           <div className="flex items-center justify-between space-x-4">
-            <h2 className="text-lg font-medium text-gray-900">Customers also viewed</h2>
-            <Link to="#" className="whitespace-nowrap text-sm font-medium text-indigo-600 hover:text-indigo-500">
+            <h2 className="text-lg font-medium text-gray-900">All Available Templates</h2>
+            {/* <Link to="#" className="whitespace-nowrap text-sm font-medium text-indigo-600 hover:text-indigo-500">
               View all
               <span aria-hidden="true"> &rarr;</span>
-            </Link>
+            </Link> */}
           </div>
           <div className="mt-6 grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
             {products.map((product) => (

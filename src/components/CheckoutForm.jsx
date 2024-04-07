@@ -46,14 +46,7 @@ const paymentMethods = [
   { id: "etransfer", title: "eTransfer" },
 ];
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
-
 export default function CheckoutForm() {
-  const [selectedDeliveryMethod, setSelectedDeliveryMethod] = useState(
-    deliveryMethods[0]
-  );
 
   return (
     <>
@@ -66,7 +59,7 @@ export default function CheckoutForm() {
             <div>
               <div className="mb-10 border-t border-gray-200 pb-10">
                 <h2 className="text-lg font-medium text-gray-900">
-                  Shipping information
+                  Contact information
                 </h2>
 
                 <div className="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4">
@@ -286,15 +279,6 @@ export default function CheckoutForm() {
                     </dd>
                   </div>
                 </dl>
-
-                <div className="border-t border-gray-200 px-4 py-6 sm:px-6">
-                  <button
-                    type="submit"
-                    className="w-full rounded-md border border-transparent bg-indigo-600 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50"
-                  >
-                    Confirm order
-                  </button>
-                </div>
               </div>
             </div>
           </form>

@@ -2,6 +2,7 @@ import { Fragment, useState } from 'react'
 import { Dialog, Popover, Tab, Transition } from '@headlessui/react'
 import { Bars3Icon, MagnifyingGlassIcon, ShoppingBagIcon, UserIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Link } from 'react-router-dom'
+import ShoppingCart from './ShoppingCart'
 
 const navigation = {
   pages: [
@@ -12,6 +13,7 @@ const navigation = {
 
 export default function Example() {
   const [open, setOpen] = useState(false)
+  const [openCart, setOpenCart] = useState(false)
 
   return (
     <div className="bg-white">
@@ -95,7 +97,7 @@ export default function Example() {
 
       <header className="relative bg-white">
         <p className="flex h-10 items-center justify-center bg-gray-900 px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
-          Get 10% off your first order when you sign up for our newsletter.
+          Get 10% off your first order.
         </p>
 
         <nav aria-label="Top" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -152,20 +154,23 @@ export default function Example() {
 
                 {/* Cart */}
                 <div className="ml-4 flow-root lg:ml-6">
-                  <Link to="#" className="group -m-2 flex items-center p-2">
+                  <button onClick={() => setOpenCart(true)} className="group -m-2 flex items-center p-2">
                     <ShoppingBagIcon
                       className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
                       aria-hidden="true"
                     />
                     <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">0</span>
                     <span className="sr-only">items in cart, view bag</span>
-                  </Link>
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </nav>
       </header>
+          
+        {/* Cart */}
+        <ShoppingCart open={openCart} setOpen={setOpenCart} />                                  
     </div>
   )
 }

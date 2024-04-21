@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
 import { Dialog } from "@headlessui/react";
+import logo from "../assets/logo.png";
+// import logo from '../assets/logo.svg';
 
 const navigation = [
   { name: "About Us", href: "/about-us" },
@@ -21,10 +23,10 @@ export default function Header() {
         <div className="flex lg:flex-1">
           <Link
             to="/"
-            className="-m-1.5 p-1.5 border-2 rounded-full border-indigo-500"
+            className="-m-1.5 p-1.5"
           >
             <span className="sr-only">BuildingBloques</span>
-            <h4 className="font-bold text-indigo-500 italic text-xl">BB</h4>
+            <img className="h-12 w-auto" src={logo} alt="Building bloques creative studio" />
           </Link>
         </div>
         <div className="flex lg:hidden">
@@ -69,10 +71,10 @@ export default function Header() {
             <div className="flex lg:flex-1">
               <Link
                 to="/"
-                className="-m-1.5 p-1.5 border-2 rounded-full border-indigo-500"
+                className="-m-1.5 p-1.5"
               >
                 <span className="sr-only">BuildingBloques</span>
-                <h4 className="font-bold text-indigo-500 italic text-xl">BB</h4>
+            <img className="h-12 w-auto" src={logo} alt="Building bloques creative studio" />
               </Link>
             </div>
             <button

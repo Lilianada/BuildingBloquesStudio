@@ -182,8 +182,8 @@ export default function Contact() {
                 </div>
                 <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Get in touch</h1>
                 <p className="mt-6 text-lg leading-8 text-gray-300">
-                  Proin volutpat consequat porttitor cras nullam gravida at. Orci molestie a eu arcu. Sed ut tincidunt
-                  integer elementum id sem. Arcu sed malesuada et magna.
+                  We'd love to hear from you! Send us a message using the form below, and we'll get back to you as soon as
+                  we can.
                 </p>
                 <dl className="mt-10 space-y-4 text-base leading-7 text-gray-300">
                   <div className="flex gap-x-4">
@@ -192,9 +192,9 @@ export default function Contact() {
                       <BuildingOffice2Icon className="h-7 w-6 text-gray-400" aria-hidden="true" />
                     </dt>
                     <dd>
-                      545 Mavis Island
+                     7th floor, Casa Bellissimo Mall
                       <br />
-                      Chicago, IL 99191
+                      Jahi, Abuja 90001
                     </dd>
                   </div>
                   <div className="flex gap-x-4">
@@ -204,7 +204,7 @@ export default function Contact() {
                     </dt>
                     <dd>
                       <a className="hover:text-white" href="tel:+1 (555) 234-5678">
-                        +1 (555) 234-5678
+                        +234 (810) 018-1416
                       </a>
                     </dd>
                   </div>
@@ -214,8 +214,8 @@ export default function Contact() {
                       <EnvelopeIcon className="h-7 w-6 text-gray-400" aria-hidden="true" />
                     </dt>
                     <dd>
-                      <a className="hover:text-white" href="mailto:hello@example.com">
-                        hello@example.com
+                      <a className="hover:text-white" href="mailto:info@buildingbloques.com">
+                        info@buildingbloques.com
                       </a>
                     </dd>
                   </div>

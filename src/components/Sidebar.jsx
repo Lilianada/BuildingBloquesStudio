@@ -68,32 +68,29 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen, navigation }) {
               {/* Sidebar */}
               <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-gray-900 px-6 pb-4 ring-1 ring-white/10">
                 <div className="flex h-16 shrink-0 items-center">
-                  <img className="h-12 w-auto mt-4" src={Logo} alt="Your Company" />
+                  <img
+                    className="h-12 w-auto mt-4"
+                    src={Logo}
+                    alt="Your Company"
+                  />
                 </div>
                 <nav className="flex flex-1 flex-col">
-                  <ul className="flex flex-1 flex-col gap-y-7">
-                    <li>
-                      <ul className="-mx-2 space-y-1">
-                        {updatedNavigation.map((item) => (
-                          <li
-                            key={item.name}
-                            onClick={() => setSidebarOpen(false)}
-                          >
-                            <Link
-                              to={item.href}
-                              className={classNames(
-                                item.current
-                                  ? "bg-gray-800 text-white"
-                                  : "text-gray-400 hover:text-white hover:bg-gray-800",
-                                "group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold"
-                              )}
-                            >
-                              {item.name}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </li>
+                  <ul className="flex flex-1 flex-col gap-y-4 -mx-2 space-y-1 mt-4">
+                    {updatedNavigation.map((item) => (
+                      <li key={item.name} onClick={() => setSidebarOpen(false)}>
+                        <Link
+                          to={item.href}
+                          className={classNames(
+                            item.current
+                              ? "bg-gray-800 text-white"
+                              : "text-gray-400 hover:text-white hover:bg-gray-800",
+                            "group flex gap-x-3 rounded-md px-2 text-sm leading-6 font-semibold"
+                          )}
+                        >
+                          {item.name}
+                        </Link>
+                      </li>
+                    ))}
                   </ul>
                 </nav>
               </div>

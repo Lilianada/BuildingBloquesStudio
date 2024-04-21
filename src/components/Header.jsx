@@ -6,6 +6,12 @@ import Sidebar from "./Sidebar";
 
 const navigation = [
   { name: "About Us", href: "/about-us" },
+  // { name: "Contact Us", href: "/contact-us" },
+  // { name: "Careers", href: "/careers" },
+];
+
+const mobileNavigation = [
+  { name: "About Us", href: "/about-us" },
   { name: "Contact Us", href: "/contact-us" },
   // { name: "Careers", href: "/careers" },
 ];
@@ -63,7 +69,7 @@ export default function Header() {
       <Sidebar
         sidebarOpen={mobileMenuOpen}
         setSidebarOpen={setMobileMenuOpen}
-        navigation={navigation}
+        navigation={mobileNavigation}
         />
     </>
   );

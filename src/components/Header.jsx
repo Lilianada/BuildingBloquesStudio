@@ -5,8 +5,8 @@ import { Dialog } from "@headlessui/react";
 
 const navigation = [
   { name: "About Us", href: "/about-us" },
-  { name: "Marketplace", href: "/marketplace" },
-  { name: "Careers", href: "/careers" },
+  // { name: "Marketplace", href: "/marketplace" },
+  // { name: "Careers", href: "/careers" },
 ];
 
 export default function Header() {

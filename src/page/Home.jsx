@@ -3,16 +3,18 @@ import Hero from '../components/Hero'
 import Footer from '../components/Footer'
 import Features from '../components/Features'
 import NewService from '../components/CallToAction'
-import ProductVision from '../components/ProductVision'
+import Packages from '../components/Packages'
 import TargetAudience from '../components/TargetAudience'
+import HowItWorks from '../components/HowItWorks'
 
 export default function Home() {
   return (
     <div>
       <Hero/>
       {/* <Features/> */}
-      <ProductVision/>
+      <HowItWorks/>
       <TargetAudience/>
+      <Packages/>
       <NewService/>
       <Footer/>
     </div>

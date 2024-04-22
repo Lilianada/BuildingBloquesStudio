@@ -70,11 +70,11 @@ export default function Features() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl lg:mx-0">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                Our Product Vision
+               How it works
               </h2>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-              In today's dynamic business landscape, navigating the journey from concept to success can feel overwhelming. But what if you had a trusted partner by your side, offering a comprehensive suite of services designed to empower your entrepreneurial spirit? 
-              </p>
+              
+               </p>
             </div>
             <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
               <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">

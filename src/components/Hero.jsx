@@ -38,11 +38,13 @@ export default function Hero() {
              Building Bloques
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-300 px-4">
-            We are a comprehensive solution provider, offering a full spectrum of services from business creation to cutting-edge technology solutions.
+            {/* We are a comprehensive solution provider, offering a full spectrum of services from business creation to cutting-edge technology solutions. */}
+            {/* Bridging the gap between ideas and execution in branding, design, and technology . */}
+            Bridging the gap between imagination and reality by empowering individuals and businesses to bring their innovative concepts to life.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <Link to="/about-us" className="text-sm font-semibold leading-6 text-white">
-                Learn more <span aria-hidden="true">→</span>
+              <Link to="/contact-us" className="text-sm font-semibold leading-6 text-white">
+                Let's work together <span aria-hidden="true">→</span>
               </Link>
             </div>
           </div>

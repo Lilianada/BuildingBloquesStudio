@@ -4,9 +4,9 @@ import Home from "./page/Home";
 import Contact from "./page/Contact";
 import About from "./page/About";
 import MarketPlace from "./page/MarketPlace";
-import ProductOverview from "./components/ProductOverview";
-import CheckoutForm from "./components/CheckoutForm";
-import OrderSummaries from "./components/OrderSummaries";
+import CheckoutForm from "./components/MarketPlace/CheckoutForm";
+import OrderSummaries from "./components/MarketPlace/OrderSummaries";
+import ProductOverview from "./components/MarketPlace/ProductOverview";
 
 function App() {
   return (

@@ -30,7 +30,7 @@ const features = [
 
 export default function Features() {
   return (
-    <div className="bg-gray-50 py-24 sm:py-32">
+    <div className="bg-gray-50 py-16 sm:py-24">
       <div className="relative mx-auto max-w-xl px-6 lg:max-w-7xl lg:px-8">
         <svg
           className="absolute left-full hidden -translate-x-1/2 -translate-y-1/4 transform lg:block"
@@ -70,7 +70,7 @@ export default function Features() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl lg:mx-0">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                Our Services
+                Our Product Vision
               </h2>
               <p className="mt-6 text-lg leading-8 text-gray-600">
               In today's dynamic business landscape, navigating the journey from concept to success can feel overwhelming. But what if you had a trusted partner by your side, offering a comprehensive suite of services designed to empower your entrepreneurial spirit? 

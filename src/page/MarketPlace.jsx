@@ -1,6 +1,6 @@
 import React from 'react'
-import StoreNavigation from '../components/StoreNavigation'
-import ProductList from '../components/ProductList'
+import StoreNavigation from '../components/MarketPlace/StoreNavigation'
+import ProductList from '../components/MarketPlace/ProductList'
 
 export default function MarketPlace() {
   return (

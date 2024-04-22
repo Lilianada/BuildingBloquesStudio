@@ -17,11 +17,6 @@ const features = [
     description: 'Become a Growth Engine by leveraging custom solutions for CRM, data analytics, and more.',
     icon: ServerIcon,
   },
-  {
-    name: 'Enterprise Clients.',
-    description: 'We provide complex system integration, cybersecurity solutions, and cloud migration support (Transformation Architect).',
-    icon: ServerIcon,
-  },
 ]
 
 export default function TargetMarket() {

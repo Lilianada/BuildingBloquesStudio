@@ -18,12 +18,12 @@ const products = [
     id: 2,
     name: 'Medium Stuff Satchel',
     href: '#',
-    color: 'Blue',
+    color: 'cyan',
     price: '$32.00',
     quantity: 1,
     imageSrc: 'https://tailwindui.com/img/ecommerce-images/shopping-cart-page-04-product-02.jpg',
     imageAlt:
-      'Front of satchel with blue canvas body, black straps and handle, drawstring top, and front zipper pouch.',
+      'Front of satchel with cyan canvas body, black straps and handle, drawstring top, and front zipper pouch.',
   },
   // More products...
 ]
@@ -104,7 +104,7 @@ export default function ShoppingCart({open, setOpen}) {
                                     <div className="flex">
                                       <button
                                         type="button"
-                                        className="font-medium text-indigo-600 hover:text-indigo-500"
+                                        className="font-medium text-cyan-600 hover:text-cyan-500"
                                       >
                                         Remove
                                       </button>
@@ -127,7 +127,7 @@ export default function ShoppingCart({open, setOpen}) {
                       <div className="mt-6">
                         <Link
                           to={`/marketplace/product/overview/checkout`}
-                          className="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+                          className="flex items-center justify-center rounded-md border border-transparent bg-cyan-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-cyan-700"
                         >
                           Checkout
                         </Link>
@@ -137,7 +137,7 @@ export default function ShoppingCart({open, setOpen}) {
                           or{' '}
                           <button
                             type="button"
-                            className="font-medium text-indigo-600 hover:text-indigo-500"
+                            className="font-medium text-cyan-600 hover:text-cyan-500"
                             onClick={() => setOpen(false)}
                           >
                             Continue Shopping

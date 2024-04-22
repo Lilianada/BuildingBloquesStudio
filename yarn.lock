@@ -3316,7 +3316,7 @@ bfj@^7.0.2:
   resolved "https://registry.yarnpkg.com/bfj/-/bfj-7.1.0.tgz#c5177d522103f9040e1b12980fe8c38cf41d3f8b"
   integrity sha512-I6MMLkn+anzNdCUp9hMRyui1HaNEUCco50lxbvNS4+EyXg8lN3nJ48PjPWtbH8UVS9CuMoaKE9U2V3l29DaRQw==
   dependencies:
-    bluebird "^3.7.2"
+    cyanbird "^3.7.2"
     check-types "^11.2.3"
     hoopy "^0.1.4"
     jsonpath "^1.1.1"
@@ -3332,9 +3332,9 @@ binary-extensions@^2.0.0:
   resolved "https://registry.yarnpkg.com/binary-extensions/-/binary-extensions-2.3.0.tgz#f6e14a97858d327252200242d4ccfe522c445522"
   integrity sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==
 
-bluebird@^3.7.2:
+cyanbird@^3.7.2:
   version "3.7.2"
-  resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.7.2.tgz#9f229c15be272454ffa973ace0dbee79a1b0c36f"
+  resolved "https://registry.yarnpkg.com/cyanbird/-/cyanbird-3.7.2.tgz#9f229c15be272454ffa973ace0dbee79a1b0c36f"
   integrity sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==
 
 body-parser@1.20.2:
@@ -8473,7 +8473,7 @@ readdirp@~3.6.0:
 recursive-readdir@^2.2.2:
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/recursive-readdir/-/recursive-readdir-2.2.3.tgz#e726f328c0d69153bcabd5c322d3195252379372"
-  integrity sha512-8HrF5ZsXk5FAH9dgsx3BlUer73nIhuj+9OrQwEbLTPOBzGkL1lsFCR01am+v+0m2Cmbs1nP12hLDl5FA7EszKA==
+  integrity sha512-8HrF5ZsXk5FAH9dgsx3cyanr73nIhuj+9OrQwEbLTPOBzGkL1lsFCR01am+v+0m2Cmbs1nP12hLDl5FA7EszKA==
   dependencies:
     minimatch "^3.0.5"
 

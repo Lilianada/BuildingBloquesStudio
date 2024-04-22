@@ -43,7 +43,7 @@ export default function Services() {
             <div className="mt-10 flex">
               <Link
                 to="/contact-us"
-                className="text-sm font-semibold leading-6 text-indigo-400"
+                className="text-sm font-semibold leading-6 text-cyan-400"
               >
                 For custom service <span aria-hidden="true">&rarr;</span>
               </Link>

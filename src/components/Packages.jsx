@@ -66,7 +66,7 @@ export default function Packages() {
           />
         </div>
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-base font-semibold leading-7 text-violet-600">
+          <h2 className="text-base font-semibold leading-7 text-cyan-600">
             Service Packages
           </h2>
           <p className="mt-2 text-4xl font-bold tracking-tight text-black sm:text-5xl">
@@ -82,7 +82,7 @@ export default function Packages() {
               key={tier.id}
               className={classNames(
                 tier.mostPopular
-                  ? 'bg-violet-600/5 ring-2 ring-violet-600'
+                  ? 'bg-cyan-600/5 ring-2 ring-cyan-600'
                   : 'ring-1 ring-gray-300',
                 'rounded-3xl p-8 xl:p-10',
               )}
@@ -95,7 +95,7 @@ export default function Packages() {
                   {tier.name}
                 </h3>
                 {tier.mostPopular ? (
-                 <p className="rounded-full bg-violet-600/10 px-2.5 py-1 text-xs font-semibold leading-5 text-violet-600">
+                 <p className="rounded-full bg-cyan-600/10 px-2.5 py-1 text-xs font-semibold leading-5 text-cyan-600">
                 Popular
                </p>
                 ) : null}
@@ -113,9 +113,9 @@ export default function Packages() {
                 aria-describedby={tier.id}
                 className={classNames(
                   tier.mostPopular
-                  ? 'bg-violet-600 text-white shadow-sm hover:bg-violet-500'
-                  : 'text-violet-600 ring-1 ring-inset ring-violet-200 hover:ring-violet-300',
-                'mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-600'
+                  ? 'bg-cyan-600 text-white shadow-sm hover:bg-cyan-500 bg-'
+                  : 'text-cyan-600 ring-1 ring-inset ring-cyan-200 hover:ring-cyan-300',
+                'mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600'
               )}
               >
                 Choose Package
@@ -126,7 +126,7 @@ export default function Packages() {
                 {tier.features.map((feature) => (
                   <li key={feature} className="flex gap-x-3">
                     <CheckIcon
-                      className="h-6 w-5 flex-none text-violet-600"
+                      className="h-6 w-5 flex-none text-cyan-600"
                       aria-hidden="true"
                     />
                     {feature}

@@ -76,7 +76,7 @@ export default function CheckoutForm() {
                         id="first-name"
                         name="first-name"
                         autoComplete="given-name"
-                        className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        className="block w-full rounded-md border-gray-300 shadow-sm focus:border-cyan-500 focus:ring-cyan-500 sm:text-sm"
                       />
                     </div>
                   </div>
@@ -94,7 +94,7 @@ export default function CheckoutForm() {
                         id="last-name"
                         name="last-name"
                         autoComplete="family-name"
-                        className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        className="block w-full rounded-md border-gray-300 shadow-sm focus:border-cyan-500 focus:ring-cyan-500 sm:text-sm"
                       />
                     </div>
                   </div>
@@ -112,7 +112,7 @@ export default function CheckoutForm() {
                         name="email"
                         id="email"
                         autoComplete="eamil"
-                        className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        className="block w-full rounded-md border-gray-300 shadow-sm focus:border-cyan-500 focus:ring-cyan-500 sm:text-sm"
                       />
                     </div>
                   </div>
@@ -130,7 +130,7 @@ export default function CheckoutForm() {
                         name="phone"
                         id="phone"
                         autoComplete="tel"
-                        className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        className="block w-full rounded-md border-gray-300 shadow-sm focus:border-cyan-500 focus:ring-cyan-500 sm:text-sm"
                       />
                     </div>
                   </div>
@@ -152,14 +152,14 @@ export default function CheckoutForm() {
                             name="payment-type"
                             type="radio"
                             defaultChecked
-                            className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                            className="h-4 w-4 border-gray-300 text-cyan-600 focus:ring-cyan-500"
                           />
                         ) : (
                           <input
                             id={paymentMethod.id}
                             name="payment-type"
                             type="radio"
-                            className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                            className="h-4 w-4 border-gray-300 text-cyan-600 focus:ring-cyan-500"
                           />
                         )}
 
@@ -240,7 +240,7 @@ export default function CheckoutForm() {
                             <select
                               id="quantity"
                               name="quantity"
-                              className="rounded-md border border-gray-300 text-left text-base font-medium text-gray-700 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 sm:text-sm"
+                              className="rounded-md border border-gray-300 text-left text-base font-medium text-gray-700 shadow-sm focus:border-cyan-500 focus:outline-none focus:ring-1 focus:ring-cyan-500 sm:text-sm"
                             >
                               <option value={1}>1</option>
                               <option value={2}>2</option>

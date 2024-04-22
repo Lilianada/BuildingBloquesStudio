@@ -20,7 +20,7 @@ export default function Partnership() {
           <div className="mt-10 flex">
             <Link
               to="/contact-us"
-              className="text-sm font-semibold leading-6 text-indigo-400"
+              className="text-sm font-semibold leading-6 text-cyan-400"
             >
               Send us a message <span aria-hidden="true">&rarr;</span>
             </Link>

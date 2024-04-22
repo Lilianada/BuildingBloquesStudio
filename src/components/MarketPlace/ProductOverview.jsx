@@ -148,13 +148,13 @@ export default function ProductOverview() {
             <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-2">
               <button
                 type="button"
-                className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50"
+                className="flex w-full items-center justify-center rounded-md border border-transparent bg-cyan-600 px-8 py-3 text-base font-medium text-white hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2 focus:ring-offset-gray-50"
               >
                 Pay {product.price}
               </button>
               <button
                 type="button"
-                className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-50 px-8 py-3 text-base font-medium text-indigo-700 hover:bg-indigo-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50"
+                className="flex w-full items-center justify-center rounded-md border border-transparent bg-cyan-50 px-8 py-3 text-base font-medium text-cyan-700 hover:bg-cyan-100 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2 focus:ring-offset-gray-50"
               >
                 Preview
               </button>
@@ -175,7 +175,7 @@ export default function ProductOverview() {
               <h3 className="text-sm font-medium text-gray-900">License</h3>
               <p className="mt-4 text-sm text-gray-500">
                 {license.summary}{' '}
-                <Link to={license.href} className="font-medium text-indigo-600 hover:text-indigo-500">
+                <Link to={license.href} className="font-medium text-cyan-600 hover:text-cyan-500">
                   Read full license
                 </Link>
               </p>
@@ -228,7 +228,7 @@ export default function ProductOverview() {
                     className={({ selected }) =>
                       classNames(
                         selected
-                          ? 'border-indigo-600 text-indigo-600'
+                          ? 'border-cyan-600 text-cyan-600'
                           : 'border-transparent text-gray-700 hover:border-gray-300 hover:text-gray-800',
                         'whitespace-nowrap border-b-2 py-6 text-sm font-medium'
                       )
@@ -240,7 +240,7 @@ export default function ProductOverview() {
                     className={({ selected }) =>
                       classNames(
                         selected
-                          ? 'border-indigo-600 text-indigo-600'
+                          ? 'border-cyan-600 text-cyan-600'
                           : 'border-transparent text-gray-700 hover:border-gray-300 hover:text-gray-800',
                         'whitespace-nowrap border-b-2 py-6 text-sm font-medium'
                       )
@@ -252,7 +252,7 @@ export default function ProductOverview() {
                     className={({ selected }) =>
                       classNames(
                         selected
-                          ? 'border-indigo-600 text-indigo-600'
+                          ? 'border-cyan-600 text-cyan-600'
                           : 'border-transparent text-gray-700 hover:border-gray-300 hover:text-gray-800',
                         'whitespace-nowrap border-b-2 py-6 text-sm font-medium'
                       )

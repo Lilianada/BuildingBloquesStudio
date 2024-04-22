@@ -53,7 +53,7 @@ export default function TargetMarket() {
                 {features.map((feature) => (
                   <div key={feature.name} className="relative">
                     <dt className="ml-9 inline-block font-semibold text-white">
-                      <feature.icon className="absolute left-1 top-1 h-5 w-5 text-indigo-500" aria-hidden="true" />
+                      <feature.icon className="absolute left-1 top-1 h-5 w-5 text-cyan-500" aria-hidden="true" />
                       {feature.name}
                     </dt>{' '}
                     <dd className="inline">{feature.description}</dd>

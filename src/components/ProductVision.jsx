@@ -76,7 +76,7 @@ import {
                 We aspire to be a one-stop shop for businesses seeking to translate their ideas into reality. We envision a future where businesses, regardless of size or industry, have access to the tools and expertise needed to thrive in today's dynamic market.
                 </p>
                 </div>
-              <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+              {/* <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
                 <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
                   {features.map((feature) => (
                     <div key={feature.name} className="flex flex-col">
@@ -103,7 +103,7 @@ import {
                     </div>
                   ))}
                 </dl>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

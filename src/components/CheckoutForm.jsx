@@ -15,7 +15,7 @@
 import { useState } from "react";
 import { RadioGroup } from "@headlessui/react";
 import { CheckCircleIcon, TrashIcon } from "@heroicons/react/20/solid";
-import StoreNavigation from "./StoreNavigation";
+import StoreNavigation from "./MarketPlace/StoreNavigation";
 
 const products = [
   {

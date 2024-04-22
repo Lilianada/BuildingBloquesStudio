@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
   }
   ```
 */
-export default function NewService() {
+export default function CallToAction() {
     return (
       <div className="bg-white py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">

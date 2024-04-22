@@ -2,15 +2,17 @@ import React from 'react'
 import Hero from '../components/Hero'
 import Footer from '../components/Footer'
 import Features from '../components/Features'
-import Productivity from '../components/TargetMarket'
-import NewService from '../components/NewService'
+import NewService from '../components/CallToAction'
+import ProductVision from '../components/ProductVision'
+import TargetAudience from '../components/TargetAudience'
 
 export default function Home() {
   return (
     <div>
       <Hero/>
-      <Features/>
-      <Productivity/>
+      {/* <Features/> */}
+      <ProductVision/>
+      <TargetAudience/>
       <NewService/>
       <Footer/>
     </div>

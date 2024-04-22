@@ -37,7 +37,8 @@ export default function TargetMarket() {
                 Brick by brick.
               </h2>
               <p className="mt-6 text-lg leading-8 text-gray-300">
-              We believe in the power of your dreams and are dedicated to helping you turn them into a thriving reality.
+              We believe in the power of your dreams and are dedicated to helping you turn them into a thriving reality. 
+              We cater to diverse clientele including:
               </p>
             </div>
             <img

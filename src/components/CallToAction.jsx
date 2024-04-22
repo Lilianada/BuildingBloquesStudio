@@ -44,10 +44,7 @@ export default function CallToAction() {
                 </button>
               </div>
               <p className="mt-4 text-sm leading-6 text-gray-300">
-                We care about your data. Read our{' '}
-                <Link to="#" className="font-semibold text-white">
-                  privacy&nbsp;policy
-                </Link>
+                Be one of the first persons to know when we launch new products.
                 .
               </p>
             </form>

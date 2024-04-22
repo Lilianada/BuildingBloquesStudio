@@ -3,6 +3,32 @@
 This project was designed and developed by me for  [Building Bloques Creative Studio](https://buildingbloques.com).
 This is a simple one page website to explain in details who Building-Bloques is.
 
+## Tech Stack
+
+* Frontend: React, Tailwind CSS
+* Additional: Mailerlite API Integration
+
+### Pages
+
+* Landing Page
+* Contact Page
+
+###  Landing Page Sections
+
+* Header
+* Hero
+* How It Works
+* Services
+* Service Packages
+* Target Audience
+* CTA
+* Footer
+
+### Contact Page Sections
+
+* Header
+* Contact Form
+
 ## Available Scripts
 
 This project was built with React. In the project directory, you can run:

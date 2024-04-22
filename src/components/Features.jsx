@@ -9,21 +9,21 @@ const features = [
     name: "Foundational Tech Stack for Startups",
     description:
       "We focus on providing the essential tech building blocks that new startups need to get off the ground. ",
-    href: "/contact",
+    href: "/contact-us",
     icon: CheckBadgeIcon,
   },
   {
     name: "Growth Tools for Established Businesses",
     description:
       "We offer solutions that existing businesses can leverage to streamline operations and improve customer interactions. ",
-    href: "/contact",
+    href: "/contact-us",
     icon: ArrowTrendingUpIcon,
   },
   {
     name: "Education & Training",
     description:
       "We offer workshops, training sessions, mentorship, and internships to nurture the next generation of innovators.",
-    href: "/contact",
+    href: "/contact-us",
     icon: AcademicCapIcon,
   },
 ];
@@ -70,7 +70,7 @@ export default function Features() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl lg:mx-0">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                Our company vision
+                Our Services
               </h2>
               <p className="mt-6 text-lg leading-8 text-gray-600">
               In today's dynamic business landscape, navigating the journey from concept to success can feel overwhelming. But what if you had a trusted partner by your side, offering a comprehensive suite of services designed to empower your entrepreneurial spirit? 

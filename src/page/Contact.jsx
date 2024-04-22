@@ -182,8 +182,7 @@ export default function Contact() {
                 </div>
                 <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Get in touch</h1>
                 <p className="mt-6 text-lg leading-8 text-gray-300">
-                  We'd love to hear from you! Send us a message using the form below, and we'll get back to you as soon as
-                  we can.
+                 To learn more about our products and services, or to schedule a consultation, please contact us using the form below.
                 </p>
                 <dl className="mt-10 space-y-4 text-base leading-7 text-gray-300">
                   <div className="flex gap-x-4">

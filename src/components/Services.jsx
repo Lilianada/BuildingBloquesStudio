@@ -28,7 +28,8 @@ export default function Services() {
               Our Services
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-            Your one-stop shop for everything you need to bring your brand to life and propel your business forward.
+              Based on our product vision and goals, here's a breakdown of
+              potential services offered
             </p>
             <ul className="mt-10 grid grid-cols-1 gap-x-8 gap-y-3 text-base leading-7 text-white sm:grid-cols-2">
               {services.map((item) => (

@@ -1,23 +1,24 @@
-import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid';
+import { PaintBrushIcon, Square3Stack3DIcon, BuildingOffice2Icon } from '@heroicons/react/20/solid';
 import SpiderWeb from "../assets/Warp_ball.svg"
 
 const features = [
   {
-    name: 'Entrepreneurs.',
-    description: 'Launch and exit your first venture with our Launchpad program.',
-    icon: CloudArrowUpIcon,
+    name: 'Individuals & Creators:',
+    description: 'Build your online presence and showcase your talents. We can help you design and launch a stunning website or portfolio that reflects your unique brand.',
+    icon: PaintBrushIcon,
   },
   {
-    name: 'Startups & Early-Stage Businesses.',
-    description: 'Our Lean Startup services focus on product development, user experience, and branding.',
-    icon: LockClosedIcon,
+    name: 'Startups & Early-Stage Businesses:',
+    description: 'Focus on what matters most – developing a great product. We offer Lean Startup services that streamline product development, optimize user experience, and build a strong brand identity.',
+    icon: Square3Stack3DIcon,
   },
   {
-    name: 'Established Businesses.',
-    description: 'Become a Growth Engine by leveraging custom solutions for CRM, data analytics, and more.',
-    icon: ServerIcon,
+    name: 'Established Businesses:',
+    description: 'Take your business to the next level. We create customized solutions for CRM, data analytics, and more, transforming you into a Growth Engine focused on efficiency and strategic expansion.',
+    icon: BuildingOffice2Icon,
   },
 ]
+
 
 export default function TargetMarket() {
   return (
@@ -27,12 +28,12 @@ export default function TargetMarket() {
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center lg:gap-y-0">
             <div className="lg:row-start-2 lg:max-w-md">
               <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                Building your dreams,
+                Building your ideas,
                 <br />
-                Brick by brick.
+                Bloque by bloque.
               </h2>
               <p className="mt-6 text-lg leading-8 text-gray-300">
-              We believe in the power of your dreams and are dedicated to helping you turn them into a thriving reality. 
+              We are a comprehensive solution provider, offering a full spectrum of services from business creation to cutting-edge technology solutions.
               We cater to diverse clientele including:
               </p>
             </div>

@@ -6,6 +6,7 @@ import Packages from '../components/Packages'
 import TargetAudience from '../components/TargetAudience'
 import HowItWorks from '../components/HowItWorks'
 import Services from '../components/Services'
+import BackToTop from '../components/BackToTop'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <TargetAudience/>
       <CallToAction/>
       <Footer/>
+      <BackToTop/>
     </div>
   )
 }

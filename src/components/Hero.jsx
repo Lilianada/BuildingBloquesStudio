@@ -47,7 +47,7 @@ export default function Hero() {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
                 to="/contact-us"
-                className="text-sm font-semibold leading-6 text-white"
+                className="text-sm font-semibold leading-6 text-cyan-500"
               >
                 Let's work together <span aria-hidden="true">→</span>
               </Link>

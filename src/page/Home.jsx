@@ -7,6 +7,7 @@ import TargetAudience from '../components/TargetAudience'
 import HowItWorks from '../components/HowItWorks'
 import Services from '../components/Services'
 import BackToTop from '../components/BackToTop'
+import AnnouncementBanner from '../components/AnnouncementBanner'
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <CallToAction/>
       <Footer/>
       <BackToTop/>
+      <AnnouncementBanner/>
     </div>
   )
 }

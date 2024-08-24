@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
+
 const navigation = {
   social: [
     {
@@ -44,8 +47,8 @@ export default function Footer() {
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="mx-auto max-w-7xl px-6 pb-8 pt-8">
-        <div className="mt-8 md:flex md:items-center md:justify-between">
+      <div className="mx-auto max-w-7xl px-6 pb-4 pt-6">
+        <div className="md:flex md:items-center md:justify-between">
           <div className="flex space-x-6 md:order-2">
             {/* {navigation.social.map((item) => (
               <a
@@ -57,6 +60,16 @@ export default function Footer() {
                 <item.icon className="h-6 w-6" aria-hidden="true" />
               </a>
             ))} */}
+            <div className="flex lg:flex-1">
+          <Link to="/" className="-m-1.5 p-1.5">
+            <span className="sr-only">BuildingBloques</span>
+            <img
+              className="h-12 w-auto"
+              src={logo}
+              alt="Building bloques creative studio"
+            />
+          </Link>
+        </div>
           </div>
           <p className="mt-8 text-xs leading-5 text-gray-400 md:order-1 md:mt-0">
             &copy; 2024 Building Bloques Creative Studio, Ltd. All rights

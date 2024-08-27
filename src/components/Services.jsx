@@ -6,10 +6,10 @@ import Img from "../assets/framerBg.svg"
 const services = [
   "Brand Identity Design",
   "UI and UX Design",
-  "Web and mobile app development",
-  "CRM systems",
-  "Content Management System (CMS) setup and customization",
-  "Cloud infrastructure setup and management",
+  "Web and Mobile App Development",
+  "CRM Systems",
+  "Content Management System (CMS) Setup and Customization",
+  "Cloud Infrastructure Setup and Management",
 ];
 
 export default function Services() {

@@ -20,7 +20,7 @@ export default function Home() {
       <CallToAction/>
       <Footer/>
       <BackToTop/>
-      <AnnouncementBanner/>
+      {/* <AnnouncementBanner/> */}
     </div>
   )
 }

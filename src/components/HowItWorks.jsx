@@ -30,9 +30,9 @@ import React from 'react'
           We've streamlined our process into three simple steps to help you bring your ideas to life:
           </p>
           <div className="mt-20">
-            <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 md:flex md:flex-wrap md:justify-center lg:grid-cols-3">
               {features.map((feature) => (
-                <div key={feature.name} className="pt-6">
+                <div key={feature.name} className="pt-6 md:w-[336px] md:h-[232px]">
                   <div className="flow-root rounded-lg bg-gray-50 px-6 pb-8">
                     <div className="-mt-6">
                       <div>

@@ -5,7 +5,7 @@ import CallToAction from '../components/CallToAction'
 import Packages from '../components/Packages'
 import TargetAudience from '../components/TargetAudience'
 import HowItWorks from '../components/HowItWorks'
-import Services from '../components/Services'
+import Services from '../components/NewServices'
 import BackToTop from '../components/BackToTop'
 import Team from '../components/Team'
 
@@ -13,10 +13,10 @@ export default function Home() {
   return (
     <div>
       <Hero/>
-      <HowItWorks/>
+      {/* <HowItWorks/> */}
       <Services/>
-      <Team/>
       <TargetAudience/>
+      <Team/>
       <Packages/>
       <CallToAction/>
       <Footer/>

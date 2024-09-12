@@ -11,13 +11,12 @@ const tiers = [
     name: 'Starter Kit',
     id: 'tier-starter',
     href: '/contact-us',
-    price: '$300' ,
-    description: 'For Individual Creator',
+    price: '$600' ,
+    description: 'For Individuals',
     features: [
+      'Consultation on project vision and goals',
       'Essential branding elements (logo)',
       'Basic website design and development',
-      'Simple contact form integration',
-      'Consultation on project vision and goals'
     ],
     mostPopular: false,
   },
@@ -25,7 +24,7 @@ const tiers = [
     name: 'Growth Engine',
     id: 'tier-growthEngine',
     href: '/contact-us',
-    price: '$900' ,
+    price: '$2000' ,
     description: 'For Established Businesses',
     features: [
       'Custom software development for specific business needs',
@@ -38,7 +37,7 @@ const tiers = [
     name: 'Launchpad',
     id: 'tier-lean',
     href: '/contact-us',
-    price:'$600',
+    price:'$1500',
     description: 'For Startups & Early-Stage Businesses',
     features: [
       'Branding package (logo, color palette, fonts)',

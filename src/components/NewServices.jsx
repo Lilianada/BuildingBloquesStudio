@@ -27,11 +27,11 @@ import React from 'react'
       description: 'We\'\ll revise the solution until you are 100% satisfied, and ensure a smooth launch for your project.',
       icon: 5,
     },
-    {
-      name: 'Cloud Infrastructure Management',
-      description: 'We\'\ll revise the solution until you are 100% satisfied, and ensure a smooth launch for your project.',
-      icon: 6,
-    },
+    // {
+    //   name: 'Cloud Infrastructure Management',
+    //   description: 'We\'\ll revise the solution until you are 100% satisfied, and ensure a smooth launch for your project.',
+    //   icon: 6,
+    // },
   ]
   
   export default function Services() {

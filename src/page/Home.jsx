@@ -7,7 +7,7 @@ import TargetAudience from '../components/TargetAudience'
 import HowItWorks from '../components/HowItWorks'
 import Services from '../components/Services'
 import BackToTop from '../components/BackToTop'
-import AnnouncementBanner from '../components/AnnouncementBanner'
+import Team from '../components/Team'
 
 export default function Home() {
   return (
@@ -15,12 +15,12 @@ export default function Home() {
       <Hero/>
       <HowItWorks/>
       <Services/>
-      <Packages/>
+      <Team/>
       <TargetAudience/>
+      <Packages/>
       <CallToAction/>
       <Footer/>
       <BackToTop/>
-      {/* <AnnouncementBanner/> */}
     </div>
   )
 }

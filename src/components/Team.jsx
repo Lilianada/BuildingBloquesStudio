@@ -12,59 +12,87 @@ const team = [
   },
 
   {
-    name: "Anyanwu Raphael",
-    role: "Co-Founder / COO",
-    imageUrl: two,
+    name: "Chidalu Anukam",
+    role: "Lead Developer",
+    imageUrl: four,
   },
 
   {
-    name: "Uche Omodu",
-    role: "Lead Developer",
+    name: "Bridget Amana",
+    role: "Frontend Developer",
+    imageUrl: four,
+  },
+
+  {
+    name: "Elizabeth Afolabi",
+    role: "Frontend Developer",
+    imageUrl: four,
+  },
+
+  {
+    name: "Grace John",
+    role: "Backend Developer",
+    imageUrl: four,
+  },
+
+  {
+    name: "Samuel Johnson",
+    role: "Backend Developer",
     imageUrl: three,
   },
 
   {
-    name: "Leslie Alexander",
+    name: "Onuh Sule",
     role: "Brand Strategist",
-    imageUrl: four,
+    imageUrl: two,
   },
+
+  {
+    name: "Chidinma Nwankwo",
+    role: "UI/UX Designer",
+    imageUrl: one,
+  },
+
+  {
+    name: "Chinonso Okeke",
+    role: "UI/UX Designer",
+    imageUrl: one,
+  },
+
+  {
+    name: "Steph Charles",
+    role: "General Manager",
+    imageUrl: one,
+  
+  }
 ];
 
   
   export default function Team() {
     return (
-      <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
-      <div className="mx-auto max-w-2xl lg:mx-0">
-        <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-          Our team
-        </h2>
-        {/* <p className="mt-6 text-lg leading-8 text-gray-300">
-          Excepturi repudiandae alias ut. Totam aut facilis. Praesentium in
-          neque vel omnis. Eos error odio. Qui fugit voluptatibus eum culpa.
-        </p> */}
+      <div className="bg-gray-50 py-24 sm:py-32">
+      <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+        <div className="max-w-2xl">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet our team</h2>
+          <p className="mt-6 text-lg leading-8 text-gray-600">
+            Libero fames augue nisl porttitor nisi, quis. Id ac elit odio vitae elementum enim vitae ullamcorper
+            suspendisse.
+          </p>
+        </div>
+        <ul role="list" className="grid gap-x-8 gap-y-8 sm:grid-cols-2 sm:gap-y-8 xl:col-span-2">
+          {team.map((person) => (
+            <li key={person.name}>
+              <div className="flex items-center gap-x-4">
+                <img alt="" src={person.imageUrl} className="h-16 w-16 rounded-full" />
+                <div>
+                  <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
+                  <p className="text-sm font-semibold leading-6 text-cyan-600">{person.role}</p>
+                </div>
+              </div>
+            </li>
+          ))}
+        </ul>
       </div>
-      <ul
-        className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4"
-      >
-        {team.map((person) => (
-          <li key={person.name}>
-            <img
-              className="aspect-[14/13] w-full rounded-2xl object-cover"
-              src={person.imageUrl}
-              alt=""
-            />
-            <h3 className="mt-6 text-lg font-semibold leading-8 tracking-tight text-white">
-              {person.name}
-            </h3>
-            <p className="text-base leading-7 text-gray-300">
-              {person.role}
-            </p>
-            <p className="text-sm leading-6 text-gray-500">
-              {person.location}
-            </p>
-          </li>
-        ))}
-      </ul>
     </div>
     )
   }

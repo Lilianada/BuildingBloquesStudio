@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import logo from "../assets/logo.png";
+import { NewHeader } from "./NewHeader";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -14,6 +15,15 @@ const navigation = [
 export default function Header() {
   const location = useLocation();
 
+  // Handle scrolling when location hash changes
+  useEffect(() => {
+    if (location.hash) {
+      const section = document.querySelector(location.hash);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location]);
   return (
     <header className="absolute inset-x-0 top-0 z-50">
       <nav
@@ -30,6 +40,8 @@ export default function Header() {
             />
           </Link>
         </div>
+
+        <NewHeader/>
         <div className="flex lg:hidden">
         {navigation.map((item) => (
             <Link
@@ -46,11 +58,11 @@ export default function Header() {
             </Link>
           ))}
         </div>
-        <div className="hidden lg:flex lg:gap-x-12">
+        {/* <div className="lg:gap-x-12">
           <h3 className="text-sm font-semibold leading-6 text-white">
             Building Bloques
           </h3>
-        </div>
+        </div> */}
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           {navigation.map((item) => (
             <Link

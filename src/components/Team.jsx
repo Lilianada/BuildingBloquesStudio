@@ -67,7 +67,6 @@ const team = [
   }
 ];
 
-  
   export default function Team() {
     return (
       <div className="bg-gray-50 py-24 sm:py-32">

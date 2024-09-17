@@ -4,7 +4,7 @@ import Footer from '../components/Footer'
 import CallToAction from '../components/CallToAction'
 import Packages from '../components/Packages'
 import TargetAudience from '../components/TargetAudience'
-import Services from '../components/NewServices'
+import Services from '../components/Services'
 import BackToTop from '../components/BackToTop'
 import Team from '../components/Team'
 

@@ -7,13 +7,15 @@ import About from '../components/About'
 import Services from '../components/Services'
 import BackToTop from '../components/BackToTop'
 import Team from '../components/Team'
+import { SecondaryFeatures } from '../components/NewAge'
 
 export default function Home() {
   return (
     <div>
       <Hero/>
-      <Services/>
+      {/* <Services/> */}
       {/* <About/> */}
+      <SecondaryFeatures/>
       <Team/>
       <Packages/>
       <CallToAction/>

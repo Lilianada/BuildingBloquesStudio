@@ -1,39 +1,32 @@
 import React from 'react'
   
-
-  const features = [
+const features = [
     {
       name: 'Brand Identity Design',
-      description: 'Explore our packages to find the best fit for your project goals or schedule a free consultation with our experts.',
-      icon:1,
+      description: 'Create a strong and memorable brand identity with our comprehensive design services',
+      icon: 1,
     },
     {
-      name: 'UI / UX Design',
-      description: 'Depending on your chosen package, we\'ll craft solutions that bring your visions, goals and projects to life.',
+      name: 'UI/UX Design',
+      description: 'Design intuitive and engaging user interfaces that drive conversions and enhance user satisfaction. ',
       icon: 2,
     },
     {
       name: 'Web and Mobile App Development',
-      description: 'We\'\ll revise the solution until you are 100% satisfied, and ensure a smooth launch for your project.',
+      description: 'Our developers specialize in creating scalable, high-performance solutions tailored to your specific needs.',
       icon: 3,
     },
     {
       name: 'CRM Systems',
-      description: 'We\'\ll revise the solution until you are 100% satisfied, and ensure a smooth launch for your project.',
+      description: 'Streamline your customer relationship management with our tailored CRM solutions.',
       icon: 4,
     },
     {
       name: 'CMS Setup and Customization',
-      description: 'We\'\ll revise the solution until you are 100% satisfied, and ensure a smooth launch for your project.',
+      description: 'Manage your website content with ease using our CMS setup and customization services.',
       icon: 5,
     },
-    // {
-    //   name: 'Cloud Infrastructure Management',
-    //   description: 'We\'\ll revise the solution until you are 100% satisfied, and ensure a smooth launch for your project.',
-    //   icon: 6,
-    // },
-  ]
-  
+  ];
   export default function Services() {
     return (
       <div className="relative bg-white py-24 sm:py-32 lg:py-36">
@@ -43,8 +36,7 @@ import React from 'react'
           One-stop shop for all your business solutions
           </p>
           <p className="mx-auto mt-5 max-w-prose text-xl text-gray-500">
-          Based on our product vision and goals, here's a breakdown of
-          potential services offered
+          Based on our product vision and goals, here's a breakdown of services offered
           </p>
           <div className="mt-20">
             <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 md:flex md:flex-wrap md:justify-center lg:grid-cols-3">

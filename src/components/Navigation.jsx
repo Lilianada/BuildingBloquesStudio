@@ -2,7 +2,7 @@ import { useLocation, Link } from "react-router-dom";
 import { Popover } from "@headlessui/react";
 import clsx from "clsx";
 
-import { Container } from "../components/Container";
+import { Container } from "./Container";
 
 function CloseIcon(props) {
   return (
@@ -60,16 +60,17 @@ function MobileNavigation(props) {
             <CloseIcon className="h-6 w-6 text-zinc-500 dark:text-zinc-400" />
           </Popover.Button>
           <h2 className="text-sm font-medium text-zinc-600 dark:text-zinc-400">
-            Navigation
+            Explore
           </h2>
         </div>
         <nav className="mt-6">
           <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800">
+            {/* <MobileNavItem href="#about">About</MobileNavItem> */}
             <MobileNavItem href="#services">Services</MobileNavItem>
-            <MobileNavItem href="#about">About</MobileNavItem>
+            <MobileNavItem href="#work">Work</MobileNavItem>
+            <MobileNavItem href="#templates">Templates</MobileNavItem>
             <MobileNavItem href="#team">Team</MobileNavItem>
             <MobileNavItem href="#packages">Packages</MobileNavItem>
-            <MobileNavItem href="#templates">Templates</MobileNavItem>
           </ul>
         </nav>
       </Popover.Panel>
@@ -105,17 +106,18 @@ function DesktopNavigation(props) {
   return (
     <nav {...props}>
       <ul className="flex rounded-full bg-white/80 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur">
+        {/* <NavItem href="#about">About</NavItem> */}
         <NavItem href="#services">Services</NavItem>
-        <NavItem href="#about">About</NavItem>
+        <NavItem href="#work">Work</NavItem>
+        <NavItem href="#templates">Templates</NavItem>
         <NavItem href="#team">Team</NavItem>
         <NavItem href="#packages">Packages</NavItem>
-        <NavItem href="#templates">Templates</NavItem>
       </ul>
     </nav>
   );
 }
 
-export function NewHeader() {
+export function Navigation() {
   return (
     <div className="relative z-50 flex flex-col">
       <Container>

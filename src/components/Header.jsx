@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import logo from "../assets/logo.png";
-import { NewHeader } from "./NewHeader";
+import { Navigation } from "./Navigation";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -41,7 +41,7 @@ export default function Header() {
           </Link>
         </div>
 
-        <NewHeader/>
+        <Navigation/>
         <div className="flex lg:hidden">
         {navigation.map((item) => (
             <Link

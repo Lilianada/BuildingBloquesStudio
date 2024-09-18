@@ -54,17 +54,10 @@ const team = [
   },
 
   {
-    name: "Chinonso Okeke",
+    name: "Chinonso Oke",
     role: "UI/UX Designer",
     imageUrl: one,
   },
-
-  {
-    name: "Steph Charles",
-    role: "General Manager",
-    imageUrl: one,
-  
-  }
 ];
 
   export default function Team() {

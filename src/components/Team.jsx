@@ -70,11 +70,11 @@ const team = [
   export default function Team() {
     return (
       <div className="bg-gray-50 py-24 sm:py-32" id="team">
-      <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+      <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-8 lg:px-16 xl:grid-cols-3">
         <div className="max-w-2xl">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet our team</h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-          Our team is comprised of skilled professionals with diverse backgrounds and expertise. Together, we collaborate to deliver outstanding results.
+          Our team is comprised of skilled professionals with diverse backgrounds and expertise.
           </p>
         </div>
         <ul role="list" className="grid gap-x-8 gap-y-8 sm:grid-cols-2 sm:gap-y-8 xl:col-span-2">

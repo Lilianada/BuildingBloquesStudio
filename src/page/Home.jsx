@@ -13,10 +13,10 @@ export default function Home() {
     <div>
       <Hero/>
       <Services/>
-      <Templates/>
       <Packages/>
+      <Templates/>
+      <Team/>
       <CallToAction/>
-      {/* <Team/> */}
       <Footer/>
       <BackToTop/>
     </div>

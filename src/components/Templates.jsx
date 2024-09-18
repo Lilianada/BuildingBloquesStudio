@@ -11,16 +11,17 @@ const products = [
     preview: "",
     link: "",
     img: Img,
-    description: "A finance management template built with next.js that can be used for all your business finances management."
+    description: "A finance management template built with next.js."
   },
+  
   {
-    name: "Klark",
-    price: 500,
-    tech: "Next.js, Node.js",
+    name: "EasyFind",
+    price: 30,
+    tech: "Next.js, Firebase",
     preview: "",
     link: "",
     img: Img,
-    description: "A finance management template built with next.js that can be used for all your business finances management."
+    description: "A job finders platform template built with next.js."
   },
   {
     name: "Kompact",
@@ -29,16 +30,7 @@ const products = [
     preview: "",
     link: "",
     img: Img,
-    description: "A finance management template built with next.js that can be used for all your business finances management."
-  },
-  {
-    name: "EasyFind",
-    price: 30,
-    tech: "Next.js, Firebase",
-    preview: "",
-    link: "",
-    img: Img,
-    description: "A finance management template built with next.js that can be used for all your business finances management."
+    description: "A finance management template built with next.js."
   },
   {
     name: "Canvas",
@@ -47,54 +39,75 @@ const products = [
     preview: "",
     link: "",
     img: Img,
-    description: "A finance management template built with next.js that can be used for all your business finances management."
+    description: "A simple one-page portfolio template built with react.js."
+  },
+  {
+    name: "Quickshow",
+    price: 30,
+    tech: "React.js",
+    preview: "",
+    link: "",
+    img: Img,
+    description: "A simple one-page portfolio template built with react.js."
+  },
+  {
+    name: "Klark",
+    price: 500,
+    tech: "Next.js, Node.js",
+    preview: "",
+    link: "",
+    img: Img,
+    description: "A business management template built with next.js."
   },
 ];
 
 export default function Templates() {
   return (
     <div className="bg-gray-900 w-full relative isolate py-24" id="templates">
-      <Container>
+      {/* <Container> */}
         <div className="relative isolate -z-10">
           <div className="mx-auto max-w-7xl sm:px-8 lg:px-20">
             <div className="mx-auto max-w-2xl sm:text-center">
               <h2 className="text-lg font-semibold text-cyan-600">Templates</h2>
               <p className="mt-2 text-lg text-gray-300">
-                We have already made templates for you to choose from.
+                We have ready to use javascript templates for you to buy.
               </p>
             </div>
-            {products.map((item, index) => (
-              <div
-                key={index}
-                className="mx-auto mt-16 flex max-w-2xl flex-col gap-12 bg-white/5 px-6 py-12 ring-1 ring-white/10 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-12 xl:gap-x-16 xl:px-16"
-              >
-                <img
-                  className="h-60 w-full flex-none rounded-2xl object-cover shadow-xl lg:aspect-square lg:max-w-sm opacity-85"
-                  src={item.img}
-                  alt=""
-                />
-                <div className="w-full flex-auto">
-                  <h2 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">
-                    {item.name}
-                  </h2>
-                  <p className="mt-4 text-lg leading-8 text-gray-300">
-                    {item.description}
-                  </p>
+            <div className="grid grid-cols-3 gap-6 mt-12">
+              {products.map((item, index) => (
+                <div
+                  key={index}
+                  className="mx-auto flex max-w-2xl flex-col gap-4 bg-white/5 px-4 py-4 ring-1 ring-white/10 sm:rounded-3xl sm:p-6 lg:mx-0 lg:max-w-none lg:items-center  xl:gap-x-8"
+                >
+                  <img
+                    className="h-40 w-full flex-none rounded-2xl object-cover shadow-xl lg:aspect-square lg:max-w-sm opacity-85"
+                    src={item.img}
+                    alt=""
+                  />
+                  <div className="w-full flex-auto">
+                    <h2 className="text-xl font-bold tracking-tight text-white sm:text-2xl">
+                      {item.name}
+                    </h2>
+                    <p className="mt-4 text-lg leading-8 text-gray-300">
+                      {item.description}
+                    </p>
 
-                  <div className="mt-10 flex items-center gap-8">
-                    <button className="bg-gray-300 py-1 px-4 rounded-md">
-                      Buy template
-                    </button>
-                    <Link
-                      to={item.preview}
-                      className="text-sm font-semibold leading-6 text-cyan-400"
-                    >
-                      Live Preview <span aria-hidden="true">&rarr;</span>
-                    </Link>
+                    <div className="mt-6 flex items-center gap-6">
+                      <button className="bg-gray-300 py-1 px-4 rounded-md text-gray-900 font-semibold text-sm">
+                        Buy template
+                      </button>
+                      <Link
+                        to={item.preview}
+                        className="text-sm font-semibold leading-6 text-cyan-400"
+                      >
+                        Live Preview <span aria-hidden="true">&rarr;</span>
+                      </Link>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+
+            </div>
           </div>
           <div
             className="absolute inset-x-0 -top-16 -z-10 flex transform-gpu justify-center overflow-hidden blur-3xl"
@@ -109,7 +122,7 @@ export default function Templates() {
             />
           </div>
         </div>
-      </Container>
+      {/* </Container> */}
     </div>
   );
 }

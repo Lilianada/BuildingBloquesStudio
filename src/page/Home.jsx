@@ -3,22 +3,20 @@ import Hero from '../components/Hero'
 import Footer from '../components/Footer'
 import CallToAction from '../components/CallToAction'
 import Packages from '../components/Packages'
-import About from '../components/About'
-import Services from '../components/Services'
 import BackToTop from '../components/BackToTop'
 import Team from '../components/Team'
-import { SecondaryFeatures } from '../components/NewAge'
+import { Services } from '../components/Services'
+import Templates from '../components/Templates'
 
 export default function Home() {
   return (
     <div>
       <Hero/>
-      {/* <Services/> */}
-      {/* <About/> */}
-      <SecondaryFeatures/>
-      <Team/>
+      <Services/>
+      <Templates/>
       <Packages/>
       <CallToAction/>
+      {/* <Team/> */}
       <Footer/>
       <BackToTop/>
     </div>

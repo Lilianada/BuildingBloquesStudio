@@ -3,40 +3,40 @@ import { Link } from "react-router-dom"
 const products = [
     {
       id: 1,
-      name: 'Fusion',
-      category: 'UI Kit',
+      name: 'Klark',
+      category: 'Business Management',
       href: '#',
-      price: '₦10,000',
+      price: '$145',
       imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-05-related-product-01.jpg',
       imageAlt:
         'Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background.',
     },
     {
       id: 2,
-      name: 'Fusion',
-      category: 'UI Kit',
+      name: 'Kudi',
+      category: 'Finance Management',
       href: '#',
-      price: '₦10,000',
+      price: '$150',
       imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-05-related-product-01.jpg',
       imageAlt:
         'Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background.',
     },
     {
       id: 3,
-      name: 'Fusion',
-      category: 'HTML Portfolio Template',
+      name: 'Showcase',
+      category: 'Portfolio Template',
       href: '#',
-      price: '₦10,000',
+      price: '$15',
       imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-05-related-product-01.jpg',
       imageAlt:
         'Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background.',
     },
     {
       id: 4,
-      name: 'Fancy',
-      category: 'React Portfolio Template',
+      name: 'Compact',
+      category: 'Portfolio Template',
       href: '#',
-      price: '₦10,000',
+      price: '$20',
       imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-05-related-product-01.jpg',
       imageAlt:
         'Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background.',

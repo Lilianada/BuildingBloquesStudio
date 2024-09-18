@@ -1,6 +1,4 @@
-import { useId } from "react";
-
-import { Container } from "./Container";
+import { Container } from "../components/Container";
 import {
   CloudIcon,
   DevicePhoneMobileIcon,
@@ -52,7 +50,7 @@ const features = [
 export function Services() {
   return (
     <section
-      id="secondary-features"
+      id="services"
       aria-label="Features for building a portfolio"
       className="py-20 sm:py-32"
     >
@@ -69,7 +67,7 @@ export function Services() {
               key={feature.name}
               className="rounded-2xl border border-gray-200 p-8"
             >
-              <feature.icon className="h-8 w-8" />
+              <feature.icon className="h-8 w-8 text-cyan-600" />
               <h3 className="mt-6 font-semibold text-gray-900">
                 {feature.name}
               </h3>

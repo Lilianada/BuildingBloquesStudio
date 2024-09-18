@@ -17,10 +17,9 @@ This is a simple one page website to explain in details who Building-Bloques is.
 
 * Header
 * Hero
-* How It Works
 * Services
-* Service Packages
-* Target Audience
+* Templates
+* Packages
 * CTA
 * Footer
 

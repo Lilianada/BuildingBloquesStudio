@@ -6,6 +6,7 @@ import ImgThree from "../assets/templates/Coinview.jpeg";
 import ImgFour from "../assets/templates/Dialer_ Recents.jpeg";
 import ImgFive from "../assets/templates/Mufidul✦.jpeg";
 import ImgSix from "../assets/templates/SuperHello.jpeg";
+import { Container } from "./Container";
 
 const products = [
   {
@@ -68,6 +69,8 @@ const products = [
 export default function Templates() {
   return (
     <div className="bg-gray-900 w-full relative isolate py-24" id="templates">
+      <Container>
+
         <div className="relative isolate -z-10">
           <div className="mx-auto max-w-7xl sm:px-8 lg:px-12">
             <div className="mx-auto max-w-2xl sm:text-center">
@@ -125,6 +128,7 @@ export default function Templates() {
           />
         </div>
         </div>
+      </Container>
     </div>
   );
 }

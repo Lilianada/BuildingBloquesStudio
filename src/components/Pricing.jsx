@@ -63,7 +63,7 @@ export default function Pricing() {
             }}
           />
         </div>
-        <div className="mx-auto max-w-4xl text-center">
+        <div className="mx-auto max-w-4xl sm:text-center">
         <h2 className="text-lg font-semibold text-cyan-600">Packages</h2>
           <p className="mt-2 text-lg text-gray-600">
           Whether you are starting a new project or aiming for rapid growth, we have a plan that fits your goals.

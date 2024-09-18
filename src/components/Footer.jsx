@@ -49,28 +49,15 @@ export default function Footer() {
       </h2>
       <div className="mx-auto max-w-7xl px-6 pb-4 pt-6">
         <div className="md:flex md:items-center md:justify-between">
-          <div className="flex space-x-6 md:order-2">
-            {/* {navigation.social.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-gray-500 hover:text-gray-400"
-              >
-                <span className="sr-only">{item.name}</span>
-                <item.icon className="h-6 w-6" aria-hidden="true" />
-              </a>
-            ))} */}
-            <div className="flex lg:flex-1">
-          <Link to="/" className="-m-1.5 p-1.5">
-            <span className="sr-only">BuildingBloques</span>
-            <img
-              className="h-12 w-auto"
-              src={logo}
-              alt="Building bloques creative studio"
-            />
-          </Link>
-        </div>
-          </div>
+          
+              <Link to="/" className="-m-1.5 p-1.5">
+                <span className="sr-only">BuildingBloques</span>
+                <img
+                  className="h-12 w-auto"
+                  src={logo}
+                  alt="Building bloques creative studio"
+                />
+              </Link>
           <p className="mt-8 text-xs leading-5 text-gray-400 md:order-1 md:mt-0">
             &copy; 2024 Building Bloques Creative Studio, Ltd. All rights
             reserved.

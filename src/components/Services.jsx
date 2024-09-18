@@ -51,7 +51,6 @@ export function Services() {
   return (
     <section
       id="services"
-      aria-label="Features for building a portfolio"
       className="py-20 sm:py-32"
     >
       <Container>

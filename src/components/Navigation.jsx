@@ -46,9 +46,9 @@ function MobileNavItem({ href, children }) {
 function MobileNavigation(props) {
   return (
     <Popover {...props}>
-      <Popover.Button className="group flex items-center rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20">
+      <Popover.Button className="group flex items-center py-2 text-sm font-medium text-white">
         Menu
-        <ChevronDownIcon className="ml-3 h-auto w-2 stroke-zinc-500 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400" />
+        <ChevronDownIcon className="ml-3 h-auto w-2 stroke-zinc-200 group-hover:stroke-zinc-500 dark:group-hover:stroke-zinc-400" />
       </Popover.Button>
 
       <Popover.Panel
@@ -65,12 +65,12 @@ function MobileNavigation(props) {
         </div>
         <nav className="mt-6">
           <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800">
-            {/* <MobileNavItem href="#about">About</MobileNavItem> */}
             <MobileNavItem href="#services">Services</MobileNavItem>
-            <MobileNavItem href="#work">Work</MobileNavItem>
+            <MobileNavItem href="#projects">Projects</MobileNavItem>
+            <MobileNavItem href="#packages">Packages</MobileNavItem>
             <MobileNavItem href="#templates">Templates</MobileNavItem>
             <MobileNavItem href="#team">Team</MobileNavItem>
-            <MobileNavItem href="#packages">Packages</MobileNavItem>
+            <MobileNavItem href="/contact-us">Contact us</MobileNavItem>
           </ul>
         </nav>
       </Popover.Panel>
@@ -106,12 +106,11 @@ function DesktopNavigation(props) {
   return (
     <nav {...props}>
       <ul className="flex rounded-full px-3 text-sm font-medium text-gray-300">
-        {/* <NavItem href="#about">About</NavItem> */}
         <NavItem href="#services">Services</NavItem>
-        <NavItem href="#work">Work</NavItem>
+        <NavItem href="#projects">Projects</NavItem>
+        <NavItem href="#packages">Packages</NavItem>
         <NavItem href="#templates">Templates</NavItem>
         <NavItem href="#team">Team</NavItem>
-        <NavItem href="#packages">Packages</NavItem>
       </ul>
     </nav>
   );
@@ -120,15 +119,13 @@ function DesktopNavigation(props) {
 export function Navigation() {
   return (
     <div className="relative z-50 flex flex-col">
-      <Container>
         <div className="relative flex gap-4">
           <div className="flex flex-1"></div>
           <div className="flex flex-1 justify-end md:justify-center">
-            <MobileNavigation className="pointer-events-auto md:hidden" />
-            <DesktopNavigation className="pointer-events-auto hidden md:block" />
+            <MobileNavigation className="pointer-events-auto lg:hidden" />
+            <DesktopNavigation className="pointer-events-auto hidden lg:block" />
           </div>
         </div>
-      </Container>
     </div>
   );
 }

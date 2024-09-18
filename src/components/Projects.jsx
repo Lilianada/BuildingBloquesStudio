@@ -1,4 +1,4 @@
-import { Card } from "../components/Card";
+import { Card } from "./Card";
 import logoExpertTranscript from "../assets/logos/experthelper.png";
 import logoCosmos from "../assets/logos/cosmos.svg";
 import logoHelioStream from "../assets/logos/helio-stream.svg";
@@ -34,13 +34,13 @@ const projects = [
     link: { href: "#", label: "github.com" },
     logo: logoCosmos,
   },
-  {
-    name: "OpenShuttle",
-    description:
-      "The schematics for the first rocket I designed that successfully made it to orbit.",
-    link: { href: "#", label: "github.com" },
-    logo: logoOpenShuttle,
-  },
+  // {
+  //   name: "OpenShuttle",
+  //   description:
+  //     "The schematics for the first rocket I designed that successfully made it to orbit.",
+  //   link: { href: "#", label: "github.com" },
+  //   logo: logoOpenShuttle,
+  // },
 ];
 
 function LinkIcon(props) {
@@ -54,9 +54,9 @@ function LinkIcon(props) {
   );
 }
 
-export default function Work() {
+export default function Projects() {
   return (
-    <section id="work" className="sm:py-32 bg-gray-900 w-full relative isolate py-24">
+    <section id="projects" className="sm:py-32 bg-gray-900 w-full relative isolate py-24">
       <div className="relative isolate -z-10">
           <Container>
             <div className="mx-auto max-w-2xl sm:text-center">

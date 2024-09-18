@@ -69,7 +69,7 @@ export default function Templates() {
   return (
     <div className="bg-gray-900 w-full relative isolate py-24" id="templates">
         <div className="relative isolate -z-10">
-          <div className="mx-auto max-w-7xl sm:px-8 lg:px-20">
+          <div className="mx-auto max-w-7xl sm:px-8 lg:px-12">
             <div className="mx-auto max-w-2xl sm:text-center">
               <h2 className="text-lg font-semibold text-cyan-600">Templates</h2>
               <p className="mt-2 text-lg text-gray-300">
@@ -80,7 +80,7 @@ export default function Templates() {
               {products.map((item, index) => (
                 <div
                   key={index}
-                  className="mx-auto flex max-w-2xl flex-col gap-4 bg-white/5 px-4 py-4 ring-1 ring-white/10 rounded-3xl sm:p-6 lg:mx-0 lg:max-w-none lg:items-center  xl:gap-x-8"
+                  className="mx-auto flex max-w-2xl flex-col gap-4 bg-white/5 px-4 py-4 ring-1 ring-white/10 rounded-3xl sm:p-6 lg:mx-0 lg:max-w-none lg:items-center xl:gap-x-8"
                 >
                   <img
                     className="h-40 w-full flex-none rounded-2xl object-cover shadow-xl lg:aspect-square lg:max-w-sm opacity-85"
@@ -88,20 +88,20 @@ export default function Templates() {
                     alt=""
                   />
                   <div className="w-full flex-auto">
-                    <h2 className="text-lg font-bold tracking-tight text-white">
+                    <h2 className="text-base md:text-lg font-semibold md:font-bold tracking-tight text-white">
                       {item.name}
                     </h2>
-                    <p className="text-base leading-6 text-gray-300">
+                    <p className="mt-2 text-sm md:text-base leading-4 md:leading-6 text-gray-300">
                       {item.description}
                     </p>
 
-                    <div className="mt-4 flex flex-wrap items-center gap-2 lg:gap-6">
-                      <button className="bg-gray-300 py-1 px-4 rounded-md text-gray-900 font-semibold text-sm">
+                    <div className="mt-4 flex lg:flex-row items-center gap-2 lg:gap-4">
+                      <button className="bg-gray-300 py-2 px-4 flex rounded-md text-gray-900 font-semibold text-sm">
                         Buy template
                       </button>
                       <Link
                         to={item.preview}
-                        className="text-sm font-semibold leading-6 text-cyan-400"
+                        className="flex gap-2 text-sm font-semibold leading-6 text-cyan-400"
                       >
                         Live preview <span aria-hidden="true">&rarr;</span>
                       </Link>

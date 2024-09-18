@@ -6,7 +6,7 @@ import BackToTop from '../components/BackToTop'
 import Team from '../components/Team'
 import { Services } from '../components/Services'
 import Templates from '../components/Templates'
-import Work from '../components/Work'
+import Projects from '../components/Projects'
 import Pricing from '../components/Pricing'
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
     <div>
       <Hero/>
       <Services/>
-      <Work/>
+      <Projects/>
       <Pricing/>
       <Templates/>
       <Team/>

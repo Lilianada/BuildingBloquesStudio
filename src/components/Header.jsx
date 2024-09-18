@@ -8,9 +8,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-const navigation = [
-  { name: "Contact us", to: "/contact-us" },
-];
+const navigation = [{ name: "Contact us", to: "/contact-us" }];
 
 export default function Header() {
   const location = useLocation();
@@ -20,7 +18,7 @@ export default function Header() {
     if (location.hash) {
       const section = document.querySelector(location.hash);
       if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
+        section.scrollIntoView({ behavior: "smooth" });
       }
     }
   }, [location]);
@@ -41,9 +39,10 @@ export default function Header() {
           </Link>
         </div>
 
-        <Navigation/>
-        <div className="flex lg:hidden">
-        {navigation.map((item) => (
+        <Navigation />
+
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+          {navigation.map((item) => (
             <Link
               key={item.to}
               to={item.to}
@@ -51,29 +50,30 @@ export default function Header() {
                 "text-sm font-semibold leading-6",
                 location.pathname === item.to
                   ? "text-cyan-400"
-                  : "text-white hover:text-cyan-400",
+                  : "text-white hover:text-cyan-400"
               )}
             >
               {item.name} <span aria-hidden="true">&rarr;</span>
             </Link>
           ))}
         </div>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+
+        {/* <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           {navigation.map((item) => (
             <Link
-            key={item.to}
-            to={item.to}
-            className={classNames(
-              "text-sm font-semibold leading-6",
-              location.pathname === item.to
-                ? "text-cyan-400"
-                : "text-white hover:text-cyan-400",
-            )}
-          >
-            {item.name} <span aria-hidden="true">&rarr;</span>
-          </Link>
+              key={item.to}
+              to={item.to}
+              className={classNames(
+                "text-sm font-semibold leading-6",
+                location.pathname === item.to
+                  ? "text-cyan-400"
+                  : "text-white hover:text-cyan-400"
+              )}
+            >
+              {item.name} <span aria-hidden="true">&rarr;</span>
+            </Link>
           ))}
-        </div>
+        </div> */}
       </nav>
     </header>
   );

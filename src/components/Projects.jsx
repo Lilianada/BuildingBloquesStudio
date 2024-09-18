@@ -1,8 +1,6 @@
 import { Card } from "./Card";
 import logoExpertTranscript from "../assets/logos/experthelper.png";
-import logoCosmos from "../assets/logos/cosmos.svg";
 import logoHelioStream from "../assets/logos/helio-stream.svg";
-import logoOpenShuttle from "../assets/logos/open-shuttle.svg";
 import logoColoring from "../assets/logos/coloringcultures.png";
 import { Container } from "./Container";
 
@@ -27,20 +25,6 @@ const projects = [
     link: { href: "#", label: "github.com" },
     logo: logoHelioStream,
   },
-  {
-    name: "cosmOS",
-    description:
-      "The operating system that powers our Planetaria space shuttles.",
-    link: { href: "#", label: "github.com" },
-    logo: logoCosmos,
-  },
-  // {
-  //   name: "OpenShuttle",
-  //   description:
-  //     "The schematics for the first rocket I designed that successfully made it to orbit.",
-  //   link: { href: "#", label: "github.com" },
-  //   logo: logoOpenShuttle,
-  // },
 ];
 
 function LinkIcon(props) {

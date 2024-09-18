@@ -73,14 +73,14 @@ export default function Templates() {
             <div className="mx-auto max-w-2xl sm:text-center">
               <h2 className="text-lg font-semibold text-cyan-600">Templates</h2>
               <p className="mt-2 text-lg text-gray-300">
-                We have ready to use javascript templates for you to buy.
+                Choose from our select templates below.
               </p>
             </div>
-            <div className="grid grid-cols-3 gap-6 mt-12">
+            <div className="grid grid-cols-1 gap-6 mt-12 sm:grid-cols-2 lg:grid-cols-3 sm:mt-16">
               {products.map((item, index) => (
                 <div
                   key={index}
-                  className="mx-auto flex max-w-2xl flex-col gap-4 bg-white/5 px-4 py-4 ring-1 ring-white/10 sm:rounded-3xl sm:p-6 lg:mx-0 lg:max-w-none lg:items-center  xl:gap-x-8"
+                  className="mx-auto flex max-w-2xl flex-col gap-4 bg-white/5 px-4 py-4 ring-1 ring-white/10 rounded-3xl sm:p-6 lg:mx-0 lg:max-w-none lg:items-center  xl:gap-x-8"
                 >
                   <img
                     className="h-40 w-full flex-none rounded-2xl object-cover shadow-xl lg:aspect-square lg:max-w-sm opacity-85"
@@ -95,7 +95,7 @@ export default function Templates() {
                       {item.description}
                     </p>
 
-                    <div className="mt-4 flex items-center gap-6">
+                    <div className="mt-4 flex flex-wrap items-center gap-2 lg:gap-6">
                       <button className="bg-gray-300 py-1 px-4 rounded-md text-gray-900 font-semibold text-sm">
                         Buy template
                       </button>

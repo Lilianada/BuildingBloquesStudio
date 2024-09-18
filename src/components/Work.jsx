@@ -65,7 +65,7 @@ export default function Work() {
                 A few selection of our most recent projects.
               </p>
             </div>
-            <ul className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3 mt-12">
+            <ul className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3 mt-12 sm:mt-16">
               {projects.map((project) => (
                 <Card as="li" key={project.name}>
                   <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-500/5 ring-1 ring-zinc-600/5 dark:border dark:border-zinc-400/50 dark:bg-zinc-400 dark:ring-0">

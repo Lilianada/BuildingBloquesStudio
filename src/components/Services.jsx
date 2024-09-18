@@ -57,10 +57,10 @@ export function Services() {
         <div className="mx-auto max-w-2xl sm:text-center">
           <h2 className="text-lg font-semibold text-cyan-600">Services</h2>
           <p className="mt-2 text-lg text-gray-600">
-            We are your One-stop shop for all your business solutions
+            We are your one-stop shop for all your business solutions
           </p>
         </div>
-        <ul className="mx-auto mt-12 grid max-w-2xl grid-cols-1 gap-6 text-sm sm:mt-16 sm:grid-cols-2 md:gap-y-10 lg:max-w-none lg:grid-cols-3">
+        <ul className="mx-auto mt-12 sm:mt-16 grid max-w-2xl grid-cols-1 gap-6 text-sm sm:mt-16 sm:grid-cols-2 md:gap-y-10 lg:max-w-none lg:grid-cols-3">
           {features.map((feature) => (
             <li
               key={feature.name}

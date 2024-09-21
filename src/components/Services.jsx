@@ -54,7 +54,7 @@ export function Services() {
     <section id="services" className="py-20 sm:py-32">
       <Container>
         <div className="mx-auto max-w-2xl sm:text-center">
-          <h2 className="text-lg font-semibold text-cyan-500">Services</h2>
+          <h2 className="text-lg font-semibold text-cyan-600">Services</h2>
           <p className="mt-2 text-lg text-gray-600">
             We are your one-stop shop for all your business solutions
           </p>

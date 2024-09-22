@@ -57,23 +57,6 @@ export default function Header() {
             </Link>
           ))}
         </div>
-
-        {/* <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          {navigation.map((item) => (
-            <Link
-              key={item.to}
-              to={item.to}
-              className={classNames(
-                "text-sm font-semibold leading-6",
-                location.pathname === item.to
-                  ? "text-cyan-400"
-                  : "text-white hover:text-cyan-400"
-              )}
-            >
-              {item.name} <span aria-hidden="true">&rarr;</span>
-            </Link>
-          ))}
-        </div> */}
       </nav>
     </header>
   );

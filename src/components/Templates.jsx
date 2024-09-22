@@ -4,7 +4,7 @@ import ImgOne from "../assets/templates/05_Aulab_png.jpeg";
 import ImgTwo from "../assets/templates/Brush-illustrations.jpeg";
 import ImgThree from "../assets/templates/Coinview.jpeg";
 import ImgFour from "../assets/templates/Dialer_ Recents.jpeg";
-import ImgFive from "../assets/templates/Mufidul✦.jpeg";
+import ImgFive from "../assets/templates/Canvas-template.png";
 import ImgSix from "../assets/templates/SuperHello.jpeg";
 import { Container } from "./Container";
 
@@ -40,11 +40,11 @@ const products = [
   {
     name: "Canvas",
     price: 30,
-    tech: "React.js",
+    tech: "Next.js",
     preview: "",
     link: "",
-    img: ImgFour,
-    description: "A simple one-page portfolio template built with react.js."
+    img: ImgFive,
+    description: "A simple one-page portfolio template built with next.js."
   },
   {
     name: "Quickshow",
@@ -52,7 +52,7 @@ const products = [
     tech: "React.js",
     preview: "",
     link: "",
-    img: ImgFive,
+    img: ImgFour,
     description: "A simple one-page portfolio template built with react.js."
   },
   {
@@ -84,7 +84,7 @@ export default function Templates() {
                   className="group mx-auto flex max-w-2xl flex-col gap-4 bg-white/5 px-4 py-4 ring-1 ring-white/10 rounded-3xl sm:p-6 lg:mx-0 lg:max-w-none lg:items-center xl:gap-x-8 transition-transform duration-500 hover:scale-105 hover:shadow-lg cursor-pointer hover:ring-cyan-800"
                 >
                   <img
-                    className="h-40 w-full flex-none rounded-2xl object-cover shadow-xl lg:aspect-square lg:max-w-sm opacity-85 transition-opacity duration-300 group-hover:opacity-100"
+                    className="h-48 w-full bg-bottom flex-none rounded-2xl object-cover shadow-xl lg:aspect-square lg:max-w-sm opacity-85 transition-opacity duration-300 group-hover:opacity-100"
                     src={item.img}
                     alt={item.name}
                   />

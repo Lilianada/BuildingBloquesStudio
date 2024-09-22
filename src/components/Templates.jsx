@@ -41,8 +41,8 @@ const products = [
     name: "Canvas",
     price: 30,
     tech: "Next.js",
-    preview: "",
-    link: "",
+    preview: "https://canvas-template-rmky.vercel.app/",
+    link: "https://canvas-template-rmky.vercel.app/",
     img: ImgFive,
     description: "A simple one-page portfolio template built with next.js."
   },
@@ -102,6 +102,7 @@ export default function Templates() {
                       </button>
                       <Link
                         to={item.preview}
+                        target="_blank"
                         className="flex gap-2 text-sm font-semibold leading-6 text-cyan-400 transition-colors duration-300 hover:text-cyan-200 cursor-pointer"
                       >
                         Live preview <span aria-hidden="true">&rarr;</span>

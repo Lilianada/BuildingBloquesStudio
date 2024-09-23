@@ -34,6 +34,7 @@ export default function MobileNavigation(props) {
       initial={false}
       animate={isOpen ? "open" : "closed"}
       className="menu"
+      {...props}
     >
       <motion.button
         whileTap={{ scale: 0.97 }}
@@ -167,7 +168,7 @@ export function Navigation() {
       <div className="relative flex gap-4">
         <div className="flex flex-1"></div>
         <div className="flex flex-1 justify-end md:justify-center">
-          <MobileNavigation className="pointer-events-auto lg:hidden" />
+          <MobileNavigation className="pointer-events-auto block lg:hidden" />
           <DesktopNavigation className="pointer-events-auto hidden lg:block" />
         </div>
       </div>

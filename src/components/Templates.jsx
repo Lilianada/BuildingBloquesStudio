@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import ImgOne from "../assets/templates/05_Aulab_png.jpeg";
 import ImgTwo from "../assets/templates/Brush-illustrations.jpeg";
-import ImgThree from "../assets/templates/Coinview.jpeg";
+import ImgThree from "../assets/templates/Kompact-template.jpeg";
 import ImgFour from "../assets/templates/Dialer_ Recents.jpeg";
 import ImgFive from "../assets/templates/Canvas-template.png";
 import ImgSix from "../assets/templates/SuperHello.jpeg";
@@ -31,11 +31,11 @@ const products = [
   {
     name: "Kompact",
     price: 30,
-    tech: "React.js",
-    preview: "",
-    link: "",
+    tech: "Next.js",
+    preview: "https://kompact-template.vercel.app/",
+    link: "https://kompact-template.vercel.app/",
     img: ImgThree,
-    description: "A finance management template built with next.js."
+    description: "A single page portfolio template built with next.js."
   },
   {
     name: "Canvas",

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import ImgOne from "../assets/templates/05_Aulab_png.jpeg";
 import ImgTwo from "../assets/templates/Brush-illustrations.jpeg";
 import ImgThree from "../assets/templates/Kompact-template.jpeg";
-import ImgFour from "../assets/templates/Dialer_ Recents.jpeg";
+import ImgFour from "../assets/templates/Showcase.png";
 import ImgFive from "../assets/templates/Canvas-template.png";
 import ImgSix from "../assets/templates/SuperHello.jpeg";
 import { Container } from "./Container";

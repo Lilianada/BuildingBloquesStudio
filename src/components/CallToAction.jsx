@@ -6,7 +6,7 @@ export default function CallToAction() {
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative isolate grid place-items-center overflow-hidden bg-gray-900 px-6 py-24 shadow-2xl rounded-3xl sm:px-24 xl:flex-row xl:items-center xl:py-32">
           <h2 className="max-w-2xl text-center text-3xl font-bold tracking-tight text-white sm:text-4xl xl:max-w-none xl:flex-auto">
-            Schedule a free consultation.
+            Schedule a <span className="text-cyan-500 italic">free</span> consultation.
           </h2>
           <p className="mx-auto mmax-w-2xl mt-4 text-lg text-center leading-8 text-gray-300">
             Learn more about our packages, get custom services, or ask any
@@ -15,7 +15,7 @@ export default function CallToAction() {
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Link
               to="/contact-us"
-              className="text-center flex-none w-60 rounded-md bg-white px-4 py-4 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              className="text-center flex-none w-60 rounded-md bg-white px-4 py-4 text-base font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
               Book a call
             </Link>

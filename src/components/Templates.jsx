@@ -10,21 +10,21 @@ import { Container } from "./Container";
 
 const products = [
   {
-    name: "Kudi",
+    name: "Klark",
     price: 150,
     tech: "Next.js, Firebase",
     preview: "",
     link: "",
     img: ImgOne,
-    description: "A finance management template built with next.js."
+    description: "Coming soon: A HR management template built with next.js."
   },
   
   {
     name: "EasyFind",
-    price: 30,
+    price: 150,
     tech: "Next.js, Firebase",
-    preview: "",
-    link: "",
+    preview: "https://easy-find-black.vercel.app/",
+    link: "https://easy-find-black.vercel.app/",
     img: ImgTwo,
     description: "A job finders platform template built with next.js."
   },
@@ -47,22 +47,22 @@ const products = [
     description: "A simple one-page portfolio template built with next.js."
   },
   {
-    name: "Quickshow",
-    price: 30,
+    name: "Showcase",
+    price: 50,
     tech: "React.js",
-    preview: "",
-    link: "",
+    preview: "https://lilydesigned.me/",
+    link: "https://lilydesigned.me/",
     img: ImgFour,
-    description: "A simple one-page portfolio template built with react.js."
+    description: "A multi-page portfolio template built with react.js."
   },
   {
-    name: "Klark",
-    price: 500,
-    tech: "Next.js, Node.js",
+    name: "Quickshow",
+    price: 50,
+    tech: "Next.js",
     preview: "",
     link: "",
     img: ImgSix,
-    description: "A business management template built with next.js."
+    description: "Coming soon: A single page portfolio template built with next.js."
   },
 ];
 

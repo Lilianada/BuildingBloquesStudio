@@ -13,7 +13,7 @@ const team = [
 
   {
     name: "Chidalu Anukam",
-    role: "Lead Developer",
+    role: "Fullstack Developer",
     imageUrl: four,
   },
 
@@ -30,33 +30,15 @@ const team = [
   },
 
   {
-    name: "Grace John",
-    role: "Backend Developer",
-    imageUrl: four,
-  },
-
-  {
-    name: "Samuel Johnson",
-    role: "Backend Developer",
-    imageUrl: three,
-  },
-
-  {
     name: "Onuh Sule",
     role: "Brand Strategist",
     imageUrl: two,
   },
 
   {
-    name: "Chidinma Nwankwo",
+    name: "Solomon Charles",
     role: "UI/UX Designer",
-    imageUrl: one,
-  },
-
-  {
-    name: "Chinonso Oke",
-    role: "UI/UX Designer",
-    imageUrl: one,
+    imageUrl: three,
   },
 ];
 
@@ -67,7 +49,7 @@ const team = [
          <div className="mx-auto max-w-2xl sm:text-center">
               <h2 className="text-lg font-semibold text-cyan-600">Meet the team</h2>
               <p className="mt-2 text-lg text-gray-600">
-              Our team is comprised of skilled professionals with diverse backgrounds and expertise.
+              Our team is comprises of skilled professionals with diverse backgrounds and expertise.
               </p>
             </div>
         <ul role="list" className="grid gap-x-8 gap-y-8 sm:grid-cols-2 sm:gap-y-8 xl:col-span-2">

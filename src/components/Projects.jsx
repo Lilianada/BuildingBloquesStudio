@@ -1,6 +1,6 @@
 import { Card } from "./Card";
 import logoExpertTranscript from "../assets/logos/experthelper.png";
-import logoHelioStream from "../assets/logos/helio-stream.svg";
+import logoFitcreatives from "../assets/logos/Fitcreative-logo.png";
 import logoColoring from "../assets/logos/coloringcultures.png";
 import { Container } from "./Container";
 
@@ -19,11 +19,11 @@ const projects = [
     logo: logoExpertTranscript,
   },
   {
-    name: "HelioStream",
+    name: "Fitcreative",
     description:
-      "Real-time video streaming library, optimized for interstellar transmission.",
-    link: { href: "#", label: "github.com" },
-    logo: logoHelioStream,
+      "A community of fitness enthusiasts who share their workout routines and progress.",
+    link: { href: "https://fitcreatives.vercel.app", label: "fitcreatives.xyz" },
+    logo: logoFitcreatives,
   },
 ];
 
@@ -52,8 +52,8 @@ export default function Projects() {
             <ul className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3 mt-12 sm:mt-16">
               {projects.map((project) => (
                 <Card as="li" key={project.name}>
-                  <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-500/5 ring-1 ring-zinc-600/5 dark:border dark:border-zinc-400/50 dark:bg-zinc-400 dark:ring-0">
-                    <img src={project.logo} alt="" className="h-10 w-10 rounded-full" />
+                  <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white">
+                    <img src={project.logo} alt="" className="h-12 w-12 rounded-full" />
                   </div>
                   <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
                     <Card.Link href={project.link.href}>

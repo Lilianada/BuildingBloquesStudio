@@ -20,6 +20,15 @@ const products = [
   },
   
   {
+    name: "Showcase",
+    price: 50,
+    tech: "React.js",
+    preview: "https://lilydesigned.me/",
+    link: "https://lilydesigned.me/",
+    img: ImgFour,
+    description: "A multi-page portfolio template built with React.js."
+  },
+  {
     name: "EasyFind",
     price: 150,
     tech: "Next.js, Firebase",
@@ -47,15 +56,6 @@ const products = [
     description: "A simple one-page portfolio template built with next.js."
   },
   {
-    name: "Showcase",
-    price: 50,
-    tech: "React.js",
-    preview: "https://lilydesigned.me/",
-    link: "https://lilydesigned.me/",
-    img: ImgFour,
-    description: "A multi-page portfolio template built with React.js."
-  },
-  {
     name: "Quickview",
     price: 50,
     tech: "Next.js",
@@ -81,7 +81,7 @@ export default function Templates() {
               {products.map((item, index) => (
                 <div
                   key={index}
-                  className="group mx-auto flex max-w-2xl flex-col gap-4 bg-white/5 px-4 py-4 ring-1 ring-white/10 rounded-3xl sm:p-6 lg:mx-0 lg:max-w-none lg:items-center xl:gap-x-8 transition-transform duration-500 hover:scale-105 hover:shadow-lg cursor-pointer hover:ring-cyan-800"
+                  className="group mx-auto flex max-w-2xl flex-col gap-4 bg-white/5 p-4 ring-1 ring-white/10 rounded-3xl lg:mx-0 lg:max-w-none lg:items-center xl:gap-x-8 transition-transform duration-500 hover:scale-105 hover:shadow-lg cursor-pointer hover:ring-cyan-800"
                 >
                   <img
                     className="h-48 w-full bg-bottom flex-none rounded-2xl object-cover shadow-xl lg:aspect-square lg:max-w-sm opacity-85 transition-opacity duration-300 group-hover:opacity-100"
@@ -92,12 +92,12 @@ export default function Templates() {
                     <h2 className="text-base md:text-lg font-semibold md:font-bold tracking-tight text-white">
                       {item.name}
                     </h2>
-                    <p className="mt-2 text-sm md:text-base leading-4 md:leading-6 text-gray-300">
+                    <p className="mt-2 text-sm md:text-base leading-4 md:leading-6 text-gray-300 truncate">
                       {item.description}
                     </p>
 
                     <div className="mt-4 flex lg:flex-row items-center gap-2 lg:gap-4">
-                      <button className="bg-gray-300 py-2 px-4 rounded-md text-gray-900 font-semibold text-sm transition-colors duration-300 hover:bg-gray-400 hover:text-cyan-700 cursor-pointer">
+                      <button className="bg-gray-300 py-2 px-4 rounded-md text-gray-900 font-semibold text-sm transition-colors duration-300 hover:text-cyan-500 cursor-pointer">
                         Buy template
                       </button>
                       <Link
@@ -105,7 +105,7 @@ export default function Templates() {
                         target="_blank"
                         className="flex gap-2 text-sm font-semibold leading-6 text-cyan-400 transition-colors duration-300 hover:text-cyan-200 cursor-pointer"
                       >
-                        Live preview <span aria-hidden="true">&rarr;</span>
+                        Preview <span aria-hidden="true">&rarr;</span>
                       </Link>
                     </div>
                   </div>

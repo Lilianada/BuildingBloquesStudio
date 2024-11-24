@@ -16,7 +16,7 @@ const products = [
     preview: "https://firmco-admin.vercel.app/",
     link: "https://firmco-admin.vercel.app/",
     img: ImgOne,
-    description: "A portfolio management platform that consists of the admin dashbord and customer dashboard built with React.js and Firebase"
+    description: "A portfolio management platform (admin dashbord and customer dashboard) built with React.js and Firebase"
   },
   
   {
@@ -26,7 +26,7 @@ const products = [
     preview: "https://easy-find-black.vercel.app/",
     link: "https://easy-find-black.vercel.app/",
     img: ImgTwo,
-    description: "A job finders platform template built with next.js."
+    description: "A job finders platform template built with Next.js."
   },
   {
     name: "Kompact",
@@ -35,7 +35,7 @@ const products = [
     preview: "https://kompact-template.vercel.app/",
     link: "https://kompact-template.vercel.app/",
     img: ImgThree,
-    description: "A single page portfolio template built with next.js."
+    description: "A single page portfolio template built with Next.js."
   },
   {
     name: "Canvas",
@@ -53,7 +53,7 @@ const products = [
     preview: "https://lilydesigned.me/",
     link: "https://lilydesigned.me/",
     img: ImgFour,
-    description: "A multi-page portfolio template built with react.js."
+    description: "A multi-page portfolio template built with React.js."
   },
   {
     name: "Quickview",
@@ -62,7 +62,7 @@ const products = [
     preview: "",
     link: "",
     img: ImgSix,
-    description: "Coming soon: A single page portfolio template built with next.js."
+    description: "Coming soon: A single page portfolio template built with Next.js."
   },
 ];
 

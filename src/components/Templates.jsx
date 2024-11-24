@@ -83,7 +83,7 @@ export default function Templates() {
             {products.map((item, index) => (
               <div
                 key={index}
-                className="group mx-auto flex max-w-2xl flex-col gap-4 bg-white/5 p-4 ring-1 ring-white/10 rounded-3xl lg:mx-0 lg:max-w-none lg:items-center xl:gap-x-8 transition-transform duration-500 hover:scale-105 hover:shadow-lg cursor-pointer hover:ring-cyan-800"
+                className="group w-auto flex flex-col gap-4 bg-white/5 p-4 ring-1 ring-white/10 rounded-3xl lg:mx-0 lg:max-w-none lg:items-center xl:gap-x-8 transition-transform duration-500 hover:scale-105 hover:shadow-lg cursor-pointer hover:ring-cyan-800"
               >
                 <img
                   className="h-48 w-full bg-bottom flex-none rounded-2xl object-cover shadow-xl lg:aspect-square lg:max-w-sm opacity-85 transition-opacity duration-300 group-hover:opacity-100"
@@ -115,13 +115,15 @@ export default function Templates() {
             ))}
           </div>
           <div className="mx-auto max-w-2xl sm:text-center grid place-items-center mt-6">
-          <Link to="/templates">
-            <button className="w-40 bg-cyan-600 text-white shadow-sm hover:bg-cyan-500
+            <Link to="/templates">
+              <button
+                className="w-40 bg-cyan-600 text-white shadow-sm hover:bg-cyan-500
                 mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600
-             ">
-              View more
-            </button>
-          </Link>
+             "
+              >
+                View more
+              </button>
+            </Link>
           </div>
         </div>
       </Container>

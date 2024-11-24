@@ -48,7 +48,7 @@ export default function Footer() {
         Footer
       </h2>
       <div className="mx-auto max-w-7xl px-6 pb-4 pt-6">
-        <div className="md:flex md:items-center md:justify-between">
+        <div className="sm:flex sm:items-center sm:justify-between">
           <Link to="/" className="-m-1.5 p-1.5">
             <span className="sr-only">BuildingBloques</span>
             <img
@@ -57,7 +57,7 @@ export default function Footer() {
               alt="Building bloques creative studio"
             />
           </Link>
-          <p className="text-xs leading-5 text-gray-400 md:order-1 md:mt-0">
+          <p className="text-xs leading-5 text-gray-400 sm:order-1 sm:mt-0">
             &copy; 2024 Building Bloques Creative Studio, Ltd. All rights
             reserved.
           </p>

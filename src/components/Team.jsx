@@ -49,7 +49,7 @@ const team = [
          <div className="mx-auto max-w-2xl sm:text-center">
               <h2 className="text-lg font-semibold text-cyan-600">Meet the team</h2>
               <p className="mt-2 text-lg text-gray-600">
-              Our team is comprises of skilled professionals with diverse backgrounds and expertise.
+              Our team comprises of skilled professionals with diverse backgrounds and expertise.
               </p>
             </div>
         <ul role="list" className="grid gap-x-8 gap-y-8 sm:grid-cols-2 sm:gap-y-8 xl:col-span-2">

@@ -1,3 +1,0 @@
-- ContactUs button doesn't work. It should send email to info@buildingbloques.com
-- Choose Package in the Pricing section should open the customers email app and populate the subject. The email should be populated with details of the package the customer is interested in, including the price, and a message to the customer saying "I am interested in this package. Please send me more information."
-- The form in the Contact Us section should send an email to info@buildingbloques.com with the subject "Contact Us" and the message should include the name, email, and message from the form.

@@ -5,7 +5,7 @@ import ImgTwo from "../assets/templates/Easy-find.png";
 import ImgThree from "../assets/templates/Kompact-template.jpeg";
 import ImgFour from "../assets/templates/Showcase.png";
 import ImgFive from "../assets/templates/Canvas-template.png";
-import ImgSix from "../assets/templates/SuperHello.jpeg";
+import ImgSix from "../assets/templates/Quickview.png";
 import { Container } from "./Container";
 
 const products = [
@@ -56,7 +56,7 @@ const products = [
     description: "A multi-page portfolio template built with react.js."
   },
   {
-    name: "Quickshow",
+    name: "Quickview",
     price: 50,
     tech: "Next.js",
     preview: "",

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ImgOne from "../assets/templates/05_Aulab_png.jpeg";
+import ImgOne from "../assets/templates/Firmco.png";
 import ImgTwo from "../assets/templates/Easy-find.png";
 import ImgThree from "../assets/templates/Kompact-template.jpeg";
 import ImgFour from "../assets/templates/Showcase.png";
@@ -10,13 +10,13 @@ import { Container } from "./Container";
 
 const products = [
   {
-    name: "Klark",
+    name: "Firmco",
     price: 150,
-    tech: "Next.js, Firebase",
-    preview: "",
-    link: "",
+    tech: "React.js, Firebase",
+    preview: "https://firmco-admin.vercel.app/",
+    link: "https://firmco-admin.vercel.app/",
     img: ImgOne,
-    description: "Coming soon: A HR management template built with next.js."
+    description: "A portfolio management platform that consists of the admin dashbord and customer dashboard built with React.js and Firebase"
   },
   
   {

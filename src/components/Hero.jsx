@@ -4,7 +4,7 @@ import Header from "./Header";
 
 export default function Hero() {
   return (
-    <div className="bg-gray-900">
+    <div className="bg-gray-900" id="hero">
       <Header />
       <div className="relative isolate overflow-hidden pt-14">
         {/* <img

@@ -57,7 +57,7 @@ export default function MobileNavigation(props) {
         </motion.div>
       </motion.button>
 
-        <motion.div
+      <motion.div
         initial="closed"
         animate={isOpen ? "open" : "closed"}
         variants={{
@@ -87,13 +87,13 @@ export default function MobileNavigation(props) {
         className="fixed inset-x-4 top-20 z-50 origin-top rounded-3xl bg-white p-8 ring-1 ring-zinc-900/5"
         style={{ pointerEvents: isOpen ? "auto" : "none" }}
       >
-          <motion.div className="flex">
-            <h2 className="text-sm font-medium text-zinc-600 dark:text-zinc-400">
-              Explore Building Bloques
-            </h2>
-          </motion.div>
+        <motion.div className="flex">
+          <h2 className="text-sm font-medium text-zinc-600 dark:text-zinc-400">
+            Explore Building Bloques
+          </h2>
+        </motion.div>
 
-          <nav className="mt-6">
+        <nav className="mt-6">
           <motion.ul
             initial="closed"
             animate={isOpen ? "open" : "closed"}
@@ -110,19 +110,18 @@ export default function MobileNavigation(props) {
             }}
             className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800"
           >
-              <MobileNavItem href="#services">Services</MobileNavItem>
-              <MobileNavItem href="#projects">Projects</MobileNavItem>
-              <MobileNavItem href="#packages">Packages</MobileNavItem>
-              <MobileNavItem href="#templates">Templates</MobileNavItem>
-              <MobileNavItem href="#team">Team</MobileNavItem>
-              <MobileNavItem href="/contact-us">Contact us</MobileNavItem>
-            </motion.ul>
-          </nav>
-        </motion.div>
+            <MobileNavItem href="/#services">Services</MobileNavItem>
+            <MobileNavItem href="/#projects">Projects</MobileNavItem>
+            <MobileNavItem href="/#packages">Packages</MobileNavItem>
+            <MobileNavItem href="/#templates">Templates</MobileNavItem>
+            <MobileNavItem href="/#team">Team</MobileNavItem>
+            <MobileNavItem href="/contact-us">Contact us</MobileNavItem>
+          </motion.ul>
+        </nav>
+      </motion.div>
     </motion.nav>
   );
 }
-
 
 function NavItem({ href, children }) {
   const location = useLocation();
@@ -152,11 +151,11 @@ function DesktopNavigation(props) {
   return (
     <nav {...props}>
       <ul className="flex rounded-full px-3 text-sm font-medium text-gray-300">
-        <NavItem href="#services">Services</NavItem>
-        <NavItem href="#projects">Projects</NavItem>
-        <NavItem href="#packages">Packages</NavItem>
-        <NavItem href="#templates">Templates</NavItem>
-        <NavItem href="#team">Team</NavItem>
+        <NavItem href="/#services">Services</NavItem>
+        <NavItem href="/#projects">Projects</NavItem>
+        <NavItem href="/#packages">Packages</NavItem>
+        <NavItem href="/#templates">Templates</NavItem>
+        <NavItem href="/#team">Team</NavItem>
       </ul>
     </nav>
   );

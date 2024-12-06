@@ -9,7 +9,7 @@ const tiers = [
   {
     name: "Starter Kit",
     id: "tier-starter",
-    href: "/contact-us",
+    href: "mailto:info@buildingbloques.com",
     price: "$600",
     description: "For Individuals",
     features: [
@@ -22,7 +22,7 @@ const tiers = [
   {
     name: "Growth Engine",
     id: "tier-growthEngine",
-    href: "/contact-us",
+    href: "mailto:info@buildingbloques.com",
     price: "$2000",
     description: "For Established Businesses",
     features: [
@@ -35,7 +35,7 @@ const tiers = [
   {
     name: "Launchpad",
     id: "tier-lean",
-    href: "/contact-us",
+    href: "mailto:info@buildingbloques.com",
     price: "$1500",
     description: "For Start-ups",
     features: [
@@ -103,7 +103,11 @@ export default function Pricing() {
                 </span> */}
               </p>
               <a
-                href={tier.href}
+                href={`mailto:info@buildingbloques.com?subject=Package Enquiry&body=${encodeURIComponent(
+                  `I am interested in this package. 
+                  Name: ${tier.name};
+                  Price: ${tier.price}`
+                )}`}
                 aria-describedby={tier.id}
                 className={classNames(
                   tier.mostPopular

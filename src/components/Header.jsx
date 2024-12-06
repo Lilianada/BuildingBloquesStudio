@@ -39,9 +39,8 @@ export default function Header() {
           </Link>
         </div>
 
-        <div className="block lg:hidden">
-        </div>
-          <Navigation />
+        <div className="block lg:hidden"></div>
+        <Navigation />
 
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           {navigation.map((item) => (

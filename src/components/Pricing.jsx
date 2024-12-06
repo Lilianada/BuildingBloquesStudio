@@ -104,7 +104,9 @@ export default function Pricing() {
               </p>
               <a
                 href={`mailto:info@buildingbloques.com?subject=Package Enquiry&body=${encodeURIComponent(
-                  `I am interested in this package. Name: ${tier.name}; Price: ${tier.price}`
+                  `I am interested in this package. 
+                  Name: ${tier.name};
+                  Price: ${tier.price}`
                 )}`}
                 aria-describedby={tier.id}
                 className={classNames(

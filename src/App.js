@@ -5,6 +5,7 @@ import Custom404 from "./page/404";
 import TemplatePage from "./components/template";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Template from "./page/Template";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="/contact-us" element={<Contact />}></Route>
           <Route path="/template/:id" element={<TemplatePage />}></Route>
+          <Route path="/templates" element={<Template />} />
           <Route path="*" element={<Custom404 />}></Route>
         </Routes>
       </Router>

@@ -1,18 +1,13 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 import Scrollbar from "smooth-scrollbar";
-
-import Hero from "../components/Hero";
-import Footer from "../components/Footer";
+import TemplatesHero from "../components/template/TemplatesHero";
 import CallToAction from "../components/CallToAction";
+import Footer from "../components/Footer";
 import BackToTop from "../components/BackToTop";
-import Team from "../components/Team";
-import { Services } from "../components/Services";
-import Templates from "../components/Templates";
-import Projects from "../components/Projects";
-import Pricing from "../components/Pricing";
+import TemplatesSection from "../components/template/TemplatesSection";
 
-export default function Home() {
+const Template = () => {
   const scrollContainer = useRef(null);
 
   useEffect(() => {
@@ -26,7 +21,6 @@ export default function Home() {
       scrollbar.destroy();
     };
   }, []);
-
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -35,15 +29,15 @@ export default function Home() {
       transition={{ duration: 0.5 }}
       ref={scrollContainer}
     >
-      <Hero />
-      <Services />
-      <Projects />
-      <Pricing />
-      <Templates />
-      <Team />
+      <TemplatesHero />
+      <section className="w-full">
+        <TemplatesSection />
+      </section>
       <CallToAction />
       <Footer />
       <BackToTop />
     </motion.div>
   );
-}
+};
+
+export default Template;

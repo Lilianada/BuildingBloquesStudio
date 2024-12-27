@@ -3,6 +3,7 @@ import logoExpertTranscript from "../assets/logos/experthelper.png";
 import logoFitcreatives from "../assets/logos/Fitcreative-logo.png";
 import logoColoring from "../assets/logos/coloringcultures.png";
 import { Container } from "./Container";
+import { Link } from "react-router-dom";
 
 const projects = [
   {
@@ -61,10 +62,10 @@ export default function Projects() {
                     </Card.Link>
                   </h2>
                   <Card.Description>{project.description}</Card.Description>
-                  <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-cyan-500 dark:text-zinc-200">
+                  <Link to={project.link.href} className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-cyan-500 dark:text-zinc-200">
                     <LinkIcon className="h-6 w-6 flex-none" />
                     <span className="ml-2">{project.link.label}</span>
-                  </p>
+                  </Link>
                 </Card>
               ))}
             </ul>

@@ -56,7 +56,7 @@ export default function Projects() {
                     <img src={project.logo} alt="" className="h-12 w-12 rounded-full" />
                   </div>
                   <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-                    <Card.Link href={project.link.href}>
+                    <Card.Link to={project.link.href}>
                       {project.name}
                     </Card.Link>
                   </h2>

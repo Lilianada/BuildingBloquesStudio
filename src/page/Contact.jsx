@@ -32,7 +32,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="bg-white">
+    <div className="max-h-screen bg-gray-900">
       <Header />
 
       <main>

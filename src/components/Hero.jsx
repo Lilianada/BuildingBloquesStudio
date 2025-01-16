@@ -7,12 +7,6 @@ export default function Hero() {
     <div className="bg-gray-900" id="hero">
       <Header />
       <div className="relative isolate overflow-hidden pt-14">
-        {/* <img
-          src={Backdrop}
-          alt="Backdrop"
-          className="absolute inset-0 -z-10 h-full w-full object-cover"
-        />
-         */}
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"

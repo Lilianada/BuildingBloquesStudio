@@ -47,7 +47,7 @@ export default function Projects() {
             <div className="mx-auto max-w-2xl sm:text-center">
               <h2 className="text-lg font-semibold text-cyan-500">Projects</h2>
               <p className="mt-2 text-lg text-gray-300">
-                A few selection of our most recent projects.
+                A few selecion of our most recent projects.
               </p>
             </div>
             <ul className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3 mt-12 sm:mt-16">

@@ -238,8 +238,8 @@ export const products = [
     name: "Quickview",
     price: 50,
     tech: ["Next.js"],
-    preview: "",
-    link: "",
+    preview: "https://quickview-template.vercel.app/",
+    link: "https://quickview-template.vercel.app/",
     img: [ImgSix],
     description:
       "Quickview is a one page portfolio template that gives your visitors an easy and quick view of your bio, skills, experiences and projects. The desktop view gives your visitor a very good look into your bio, image and profile. It is easily customizable and easy to understand.",
